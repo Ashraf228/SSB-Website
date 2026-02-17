@@ -27,8 +27,13 @@ export default function Process({ onBook }: { onBook: () => void }) {
   ];
 
   return (
-    <section className="py-24 px-6 bg-[#EEF1F5] text-[#0B1220]">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-24 px-6 bg-[#0B1220] text-white relative overflow-hidden">
+      {/* Glow für Tiefe */}
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
+        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-[#1E3352] blur-3xl rounded-full" />
+      </div>
+
+      <div className="relative max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +49,7 @@ export default function Process({ onBook }: { onBook: () => void }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ delay: 0.08, duration: 0.6, ease: "easeOut" }}
-          className="mt-4 text-gray-700 max-w-3xl leading-relaxed"
+          className="mt-4 text-white/80 max-w-3xl leading-relaxed"
         >
           Klarer Ablauf, schnelle Abstimmung, saubere Umsetzung. Sie erhalten eine nachvollziehbare Strategie
           und eine Lösung, die langfristig entlastet.
@@ -58,14 +63,14 @@ export default function Process({ onBook }: { onBook: () => void }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.55, ease: "easeOut" }}
-              className="relative rounded-2xl bg-white/80 backdrop-blur border border-black/10 p-8 hover:shadow-lg transition overflow-hidden"
+              className="relative rounded-2xl bg-white/5 backdrop-blur border border-white/10 p-8 hover:shadow-lg transition overflow-hidden"
             >
-              <div className="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-[#1E3352]/10 blur-2xl" />
+              <div className="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-[#1E3352]/30 blur-2xl" />
 
               <div className="relative">
-                <div className="text-sm font-semibold text-[#1E3352]">{s.nr}</div>
-                <h3 className="mt-2 text-xl font-semibold">{s.title}</h3>
-                <p className="mt-3 text-gray-700 leading-relaxed">{s.desc}</p>
+                <div className="text-sm font-semibold text-[#6DA3FF]">{s.nr}</div>
+                <h3 className="mt-2 text-xl font-semibold text-white">{s.title}</h3>
+                <p className="mt-3 text-white/80 leading-relaxed">{s.desc}</p>
               </div>
             </motion.div>
           ))}
@@ -76,17 +81,17 @@ export default function Process({ onBook }: { onBook: () => void }) {
             onClick={onBook}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
-            className="px-7 py-3 rounded-xl bg-[#0B1220] text-white font-semibold hover:bg-[#1E3352] transition shadow-sm"
+            className="px-7 py-3 rounded-xl bg-white text-[#0B1220] font-semibold hover:bg-white/90 transition shadow-sm"
           >
             Kostenlose Erstberatung sichern
           </motion.button>
 
-          <div className="text-sm text-gray-600">
+          <div className="text-sm text-white/60">
             30 Minuten Analyse – unverbindlich. Sie erhalten konkrete Optionen und nächste Schritte.
           </div>
         </div>
 
-        <div className="h-px bg-black/5 mt-16 max-w-6xl mx-auto" />
+        <div className="h-px bg-white/5 mt-16 max-w-6xl mx-auto" />
       </div>
     </section>
   );

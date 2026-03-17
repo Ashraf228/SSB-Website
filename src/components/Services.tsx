@@ -6,24 +6,20 @@ import RevealGroup, { RevealItem } from "./RevealGroup";
 
 const services = [
   {
-    title: "Websites",
-    desc: "Moderne, responsive Websites mit klarer Struktur, starker Performance und professionellem Design – optimiert für Anfragen.",
+    title: "Websites – Ihr digitales Fundament",
+    desc: "Professionelle Websites, die Vertrauen schaffen, bei Google gefunden werden und Anfragen strukturiert erfassen.",
   },
   {
-    title: "KI-Rezeption",
-    desc: "Automatisierte Terminvergabe und Vorqualifizierung von Anfragen – weniger Aufwand, mehr Struktur im Vertrieb.",
+    title: "Online-Sichtbarkeit",
+    desc: "Wir sorgen dafür, dass Ihr Unternehmen online sichtbar ist und bei relevanten Suchanfragen gefunden wird.",
   },
   {
-    title: "KI-Support",
-    desc: "Antwortet auf Standardfragen, erstellt Tickets und entlastet Ihr Team – ideal für 1st-Level Support.",
+    title: "Strukturierte Anfragen & Termine",
+    desc: "Klare Anfrageprozesse und einfache Terminorganisation sparen Zeit und reduzieren Rückfragen.",
   },
   {
-    title: "KI-Wissensdatenbank",
-    desc: "Unternehmenswissen zentral nutzbar machen: Antworten aus Dokumenten/FAQs/Prozessen – schnell und konsistent.",
-  },
-  {
-    title: "Maßgeschneiderte Lösungen",
-    desc: "Individuelle Automationen und Agenten, angepasst an Ihre Systeme und Prozesse (CRM, Mail, Kalender, Tools).",
+    title: "Automatisierung & Effizienz",
+    desc: "Wiederkehrende Aufgaben werden automatisiert, damit Ihr Unternehmen effizienter und skalierbarer wird.",
   },
 ];
 

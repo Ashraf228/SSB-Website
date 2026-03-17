@@ -41,7 +41,7 @@ export default function Process({ onBook }: { onBook: () => void }) {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-3xl md:text-4xl font-bold"
         >
-          So entsteht Ihr digitales Effizienzsystem.
+          Wir arbeiten strukturiert und transparent – mit dem Ziel, Ihr Unternehmen langfristig effizienter aufzustellen.
         </motion.h2>
 
         <motion.p

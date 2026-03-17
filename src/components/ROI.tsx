@@ -47,8 +47,9 @@ export default function ROI({ onBook }: { onBook: () => void }) {
           transition={{ delay: 0.08, duration: 0.6, ease: "easeOut" }}
           className="mt-4 text-gray-300 max-w-3xl leading-relaxed"
         >
-          Der größte Hebel entsteht durch weniger manuelle Arbeit, klarere Abläufe und schnellere Reaktionszeiten.
-          Wir berechnen im Erstgespräch konkrete Potenziale – basierend auf Ihren Prozessen.
+          Der größte Unterschied entsteht nicht durch Design, sondern durch effizientere Abläufe.
+
+Weniger manuelle Arbeit, klarere Prozesse und schnellere Reaktionszeiten machen sich direkt im Alltag bemerkbar.
         </motion.p>
 
         <div className="mt-12 grid md:grid-cols-3 gap-8">

@@ -42,9 +42,11 @@ export default function WhySoule() {
           transition={{ delay: 0.1, duration: 0.6 }}
           className="mt-4 text-gray-700 max-w-3xl leading-relaxed"
         >
-          Digitale Projekte sind kein Selbstzweck. Sie müssen Prozesse vereinfachen,
-          Kosten senken und Wachstum ermöglichen.
-          Genau darauf ist unsere Arbeit ausgerichtet.
+         Digitale Lösungen sollten nicht nur gut aussehen, sondern Ihr Unternehmen wirklich voranbringen.
+
+Wir entwickeln keine einzelnen Projekte, sondern helfen Unternehmen dabei, ihre digitale Struktur nachhaltig zu verbessern.
+
+Unser Fokus liegt auf Klarheit, Effizienz und langfristiger Zusammenarbeit.
         </motion.p>
 
         <div className="mt-12 grid md:grid-cols-2 gap-8">

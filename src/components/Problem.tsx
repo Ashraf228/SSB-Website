@@ -42,8 +42,11 @@ export default function Problem({ onBook }: { onBook: () => void }) {
           transition={{ delay: 0.08, duration: 0.6, ease: "easeOut" }}
           className="mt-4 text-gray-700 max-w-3xl leading-relaxed"
         >
-          Viele Unternehmen verlieren täglich Zeit und Potenzial durch manuelle Abläufe und fehlende Struktur.
-          Wir entwickeln digitale Systeme, die entlasten – und langfristig Kosten reduzieren.
+          Anfragen kommen ungefiltert rein, Termine werden manuell abgestimmt und wiederkehrende Aufgaben kosten unnötig Zeit.
+
+Das führt zu Chaos im Tagesgeschäft und verhindert effizientes Wachstum.
+
+Genau hier setzen wir an.
         </motion.p>
 
         <div className="mt-12 grid md:grid-cols-2 gap-8">

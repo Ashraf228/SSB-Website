@@ -10,7 +10,7 @@ export default function NextStep({ onBook }: { onBook: () => void }) {
         <p className="mt-4 text-white/75 max-w-3xl leading-relaxed">
           Bereit für den nächsten Schritt? Wir sind es.
           <br />
-          Wir analysieren Ihre Situation und zeigen konkrete Optionen auf – ohne Verkaufsdruck.
+          Wir analysieren Ihre aktuelle Situation und zeigen Ihnen, wo konkrete Verbesserungen möglich sind – klar, strukturiert und ohne Verkaufsdruck.
         </p>
 
         <motion.button

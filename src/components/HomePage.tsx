@@ -15,6 +15,7 @@ import ROI from "./ROI";
 import ROICalculator from "./ROICalculator";
 import StickyCTA from "./StickyCTA";
 import SectionTransition from "./SectionTransition";
+import Founder from "./Founder";
 
 export default function HomePage() {
   const [open, setOpen] = useState(false);
@@ -35,6 +36,7 @@ export default function HomePage() {
       <Process onBook={() => setOpen(true)} />
         <SectionTransition direction="darkToLight" />
       <WhySoule />
+      <Founder />
       <FAQ />
       <SectionTransition direction="lightToDark" />
       <NextStep onBook={() => setOpen(true)} />

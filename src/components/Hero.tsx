@@ -50,7 +50,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
           transition={{ delay: 0.1, duration: 0.7, ease: "easeOut" }}
           className="mt-8 text-4xl md:text-6xl font-bold tracking-tight"
         >
-          Digitale Systeme, die Ihr Unternehmen effizienter machen.
+          Mehr Anfragen. Weniger Aufwand.
         </motion.h1>
 
         {/* Subheadline */}
@@ -60,9 +60,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
           transition={{ delay: 0.2, duration: 0.7, ease: "easeOut" }}
           className="mt-6 text-base md:text-lg text-white/75 max-w-3xl mx-auto leading-relaxed"
         >
-          Soulé Smart Business entwickelt moderne Web-Infrastrukturen und
-          intelligente KI-Lösungen, die Prozesse automatisieren,
-          Kosten reduzieren und langfristige Wettbewerbsvorteile schaffen.
+          Wir entwickeln Websites und digitale Strukturen, die Ihr Unternehmen online sichtbar machen und interne Prozesse effizienter gestalten.
         </motion.p>
 
         {/* CTA */}

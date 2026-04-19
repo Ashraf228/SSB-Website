@@ -19,7 +19,7 @@ export default function DatenschutzPage() {
             <p className="mt-3">
               Ashraf Soulé, Soulé Smart Business
               <br />
-              Schulstrasse 36, 65552 Eschhofen, Deutschland
+              Schulstrasse 36, 65549 Limburg, Deutschland
               <br />
               E-Mail: soulesmartbusiness@gmail.com
               <br />

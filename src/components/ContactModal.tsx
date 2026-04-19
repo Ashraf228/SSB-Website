@@ -71,9 +71,9 @@ export default function ContactModal({
           >
             <div className="p-7 md:p-8 border-b border-black/10 flex items-center justify-between">
               <div>
-                <div className="text-xl font-bold">Termin anfragen</div>
+                <div className="text-xl font-bold">Strategiegespraech anfragen</div>
                 <div className="text-sm text-gray-600 mt-1">
-                  Kurz beschreiben – ich melde mich schnellstmöglich zurück.
+                  Kurz beschreiben, wo Sie KI, Automatisierung oder smartere Prozesse im Unternehmen aufbauen moechten.
                 </div>
               </div>
               <button onClick={onClose} className="text-gray-500 hover:text-black">
@@ -126,7 +126,7 @@ export default function ContactModal({
 
               <textarea
                 className="w-full p-3.5 border rounded-xl"
-                placeholder="Worum geht es? (Website, KI-Rezeption, Support, Wissensdatenbank …)*"
+                placeholder="Worum geht es? (KI, Automatisierung, Prozesse, SEO, Google Ads, Website ...)*"
                 rows={5}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
@@ -143,7 +143,7 @@ export default function ContactModal({
                 disabled={loading}
                 className="w-full mt-2 px-6 py-3 rounded-xl bg-[#0B1220] text-white font-semibold hover:bg-[#1E3352] transition disabled:opacity-60"
               >
-                {loading ? "Senden..." : "Anfrage senden"}
+                {loading ? "Senden..." : "Analyse anfragen"}
               </button>
 
               <div className="text-center text-sm text-gray-600">

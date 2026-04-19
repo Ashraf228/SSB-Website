@@ -1,26 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://soulesmartbusiness.com"),
   title: {
-    default: "Soulé Smart Business | Websites & KI-Automation für Unternehmen",
-    template: "%s | Soulé Smart Business",
+    default: "Soule Smart Business | KI, Automatisierung und smartes Business",
+    template: "%s | Soule Smart Business",
   },
   description:
-    "Strategischer Digitalisierungspartner: moderne Websites als Fundament und maßgeschneiderte KI-Lösungen zur Automatisierung, Effizienzsteigerung und Kostenreduktion.",
-  applicationName: "Soulé Smart Business",
+    "Smart Business fuer Unternehmen mit Fokus auf KI, Automatisierung und effiziente Prozesse. SEO und Google Ads unterstuetzen als Wachstumsergaenzung.",
+  applicationName: "Soule Smart Business",
   alternates: { canonical: "https://soulesmartbusiness.com" },
   icons: {
     icon: "/icon.png",
@@ -30,19 +19,19 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://soulesmartbusiness.com",
-    siteName: "Soulé Smart Business",
-    title: "Soulé Smart Business | Websites & KI-Automation",
+    siteName: "Soule Smart Business",
+    title: "Soule Smart Business | KI, Automatisierung und smartes Business",
     description:
-      "Moderne Websites und intelligente KI-Lösungen, die Prozesse automatisieren, Kosten reduzieren und Unternehmen effizienter machen.",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Soulé Smart Business" }],
+      "Ich helfe Unternehmen, KI sinnvoll einzusetzen, Prozesse zu automatisieren und ihr Business smarter aufzustellen. SEO und Google Ads ergaenzen das Wachstum.",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Soule Smart Business" }],
     locale: "de_DE",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Soulé Smart Business | Websites & KI-Automation",
+    title: "Soule Smart Business | KI, Automatisierung und smartes Business",
     description:
-      "Moderne Websites und KI-Automation für Unternehmen – Effizienz steigern, Kosten senken, Prozesse automatisieren.",
-    images: ["/og.jpg"],
+      "KI und Automatisierung fuer smartes Business. SEO und Google Ads als sinnvolle Wachstumsergaenzung.",
+    images: ["/og.png"],
   },
   robots: {
     index: true,
@@ -58,11 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

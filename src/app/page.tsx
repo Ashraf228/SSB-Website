@@ -18,14 +18,14 @@ export default function Page() {
     founder: "Ashraf Soule",
     areaServed: "DE",
     description:
-      "Smart Business fuer Unternehmen mit Fokus auf KI, Automatisierung und effiziente Prozesse. SEO und Google Ads dienen als Wachstumsergaenzung.",
+      "Smart Business für Unternehmen mit Fokus auf KI, Automatisierung und effiziente Prozesse. SEO und Google Ads dienen als Wachstumsergänzung.",
     knowsAbout: [
       "KI im Unternehmen",
       "Automatisierung",
       "Prozessoptimierung",
       "SEO",
       "Google Ads",
-      "Websites fuer Unternehmen",
+      "Websites für Unternehmen",
       "Digitale Effizienz",
     ],
     sameAs: [],

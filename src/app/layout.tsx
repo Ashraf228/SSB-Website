@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | Soule Smart Business",
   },
   description:
-    "Smart Business fuer Unternehmen mit Fokus auf KI, Automatisierung und effiziente Prozesse. SEO und Google Ads unterstuetzen als Wachstumsergaenzung.",
+    "Smart Business für Unternehmen mit Fokus auf KI, Automatisierung und effiziente Prozesse. SEO und Google Ads unterstützen als Wachstumsergänzung.",
   applicationName: "Soule Smart Business",
   alternates: { canonical: "https://soulesmartbusiness.com" },
   icons: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "Soule Smart Business",
     title: "Soule Smart Business | KI, Automatisierung und smartes Business",
     description:
-      "Ich helfe Unternehmen, KI sinnvoll einzusetzen, Prozesse zu automatisieren und ihr Business smarter aufzustellen. SEO und Google Ads ergaenzen das Wachstum.",
+      "Ich helfe Unternehmen, KI sinnvoll einzusetzen, Prozesse zu automatisieren und ihr Business smarter aufzustellen. SEO und Google Ads ergänzen das Wachstum.",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Soule Smart Business" }],
     locale: "de_DE",
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Soule Smart Business | KI, Automatisierung und smartes Business",
     description:
-      "KI und Automatisierung fuer smartes Business. SEO und Google Ads als sinnvolle Wachstumsergaenzung.",
+      "KI und Automatisierung für smartes Business. SEO und Google Ads als sinnvolle Wachstumsergänzung.",
     images: ["/og.png"],
   },
   robots: {

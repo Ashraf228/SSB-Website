@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Case: KI-Agent und Anfrageprozess fuer Dienstleister",
+  title: "Case: KI-Agent und Anfrageprozess für Dienstleister",
   description:
-    "Case-Szenario: Wie ein KI-Agent fuer Dienstleister Anfragen besser qualifiziert, Wissen schneller bereitstellt und Prozesse entlastet.",
+    "Case-Szenario: Wie ein KI-Agent für Dienstleister Anfragen besser qualifiziert, Wissen schneller bereitstellt und Prozesse entlastet.",
   alternates: {
     canonical: "https://soulesmartbusiness.com/case-ki-agent-dienstleister",
   },
@@ -25,11 +25,11 @@ export default function CaseKIAgentDienstleisterPage() {
           Case
         </div>
         <h1 className="mt-4 max-w-4xl text-5xl font-semibold tracking-[-0.04em] text-[var(--ink-1)]">
-          KI-Agent und Anfrageprozess fuer Dienstleister
+          KI-Agent und Anfrageprozess für Dienstleister
         </h1>
         <p className="mt-8 max-w-3xl text-lg leading-8 text-[var(--muted)]">
-          Ein typisches Szenario: Ein Dienstleistungsunternehmen erhaelt viele Anfragen,
-          beantwortet haeufig dieselben Rueckfragen und verliert Zeit bei der
+          Ein typisches Szenario: Ein Dienstleistungsunternehmen erhält viele Anfragen,
+          beantwortet häufig dieselben Rückfragen und verliert Zeit bei der
           Vorqualifizierung. Ein KI-Agent kann hier als intelligenter Vorfilter und
           Wissenszugang dienen.
         </p>
@@ -38,31 +38,31 @@ export default function CaseKIAgentDienstleisterPage() {
           <div className="rounded-[1.8rem] border border-[var(--line)] bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.05)]">
             <h2 className="text-2xl font-semibold text-[var(--ink-1)]">Vorher</h2>
             <p className="mt-4 text-base leading-8 text-[var(--muted)]">
-              Viele manuelle Rueckfragen, unklare Lead-Qualitaet, langsame Reaktionszeiten
-              und Informationen, die verteilt in Dokumenten, Mails oder Koepfen liegen.
+              Viele manuelle Rückfragen, unklare Lead-Qualität, langsame Reaktionszeiten
+              und Informationen, die verteilt in Dokumenten, Mails oder Köpfen liegen.
             </p>
           </div>
           <div className="rounded-[1.8rem] border border-[var(--line)] bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.05)]">
             <h2 className="text-2xl font-semibold text-[var(--ink-1)]">Nachher</h2>
             <p className="mt-4 text-base leading-8 text-[var(--muted)]">
               Ein KI-Agent beantwortet Standardfragen, sortiert Anfragen vor, greift auf
-              relevantes Wissen zu und uebergibt qualifiziertere Kontakte an den naechsten
+              relevantes Wissen zu und übergibt qualifiziertere Kontakte an den nächsten
               Prozessschritt.
             </p>
           </div>
         </div>
 
         <div className="mt-16 rounded-[2rem] border border-[var(--line)] bg-white p-8 shadow-[0_18px_50px_rgba(15,23,42,0.06)]">
-          <h2 className="text-3xl font-semibold tracking-[-0.03em] text-[var(--ink-1)]">
-            Was dieser KI-Agent verbessert
-          </h2>
-          <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--muted)]">
-            Weniger manuelle Rueckfragen, bessere Vorqualifizierung, schnellerer
-            Wissenszugriff und mehr operative Ruhe im Alltag. Genau solche Cases sind fuer
-            Unternehmen spannend, die nach `KI-Agenten fuer Dienstleister` oder
-            `KI-Agenten fuer Unternehmen` suchen.
-          </p>
-        </div>
+            <h2 className="text-3xl font-semibold tracking-[-0.03em] text-[var(--ink-1)]">
+              Was dieser KI-Agent verbessert
+            </h2>
+            <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--muted)]">
+              Weniger manuelle Rückfragen, bessere Vorqualifizierung, schnellerer
+              Wissenszugriff und mehr operative Ruhe im Alltag. Genau solche Cases sind für
+              Unternehmen spannend, die nach `KI-Agenten für Dienstleister` oder
+              `KI-Agenten für Unternehmen` suchen.
+            </p>
+          </div>
       </div>
     </main>
   );

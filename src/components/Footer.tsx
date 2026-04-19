@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <div className="font-semibold text-[var(--ink-1)]">Soule Smart Business</div>
             <div className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">
-              Smart Business fuer Unternehmen: Prozesse optimieren, Zeit und Kosten
+              Smart Business für Unternehmen: Prozesse optimieren, Zeit und Kosten
               sparen sowie Sichtbarkeit durch SEO und Google Ads aufbauen.
             </div>
             <div className="mt-3 text-sm leading-6 text-[var(--muted)]">

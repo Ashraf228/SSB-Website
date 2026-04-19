@@ -11,23 +11,23 @@ const servicePillars = [
   {
     eyebrow: "KI",
     href: "/ki-agenten",
-    title: "KI-Loesungen und Agenten, die im Unternehmen wirklich entlasten",
-    text: "Ich entwickle smarte KI-gestuetzte Loesungen und KI-Agenten, die Informationen schneller verfuegbar machen, wiederkehrende Aufgaben vereinfachen und Teams im Alltag konkret unterstuetzen.",
-    bullets: ["KI-Agenten fuer verschiedene Bereiche", "Schnellere Antworten", "Mehr Entlastung im Tagesgeschaeft"],
+    title: "KI-Lösungen und Agenten, die im Unternehmen wirklich entlasten",
+    text: "Ich entwickle smarte KI-gestützte Lösungen und KI-Agenten, die Informationen schneller verfügbar machen, wiederkehrende Aufgaben vereinfachen und Teams im Alltag konkret unterstützen.",
+    bullets: ["KI-Agenten für verschiedene Bereiche", "Schnellere Antworten", "Mehr Entlastung im Tagesgeschäft"],
   },
   {
     eyebrow: "Automatisierung",
     href: "/automatisierung",
     title: "Prozesse automatisieren statt Zeit zu verlieren",
-    text: "Der Fokus liegt auf smartem Business: weniger manuelle Arbeit, weniger Reibung und klarere digitale Ablaeufe. So sparen Unternehmen Zeit, senken Kosten und gewinnen operative Ruhe.",
+    text: "Der Fokus liegt auf smartem Business: weniger manuelle Arbeit, weniger Reibung und klarere digitale Abläufe. So sparen Unternehmen Zeit, senken Kosten und gewinnen operative Ruhe.",
     bullets: ["Automatisierte Routinen", "Klare digitale Workflows", "Weniger Reibung zwischen Aufgaben"],
   },
   {
     eyebrow: "Wachstum",
     href: "/seo-google-ads",
-    title: "SEO und Google Ads als Verstaerker",
-    text: "Wenn die internen Grundlagen stehen, unterstuetze ich Unternehmen dabei, auch nach aussen sichtbarer zu werden. SEO und Google Ads sind dabei kein Selbstzweck, sondern ein strategisches Nebenprodukt eines smarten Business-Setups.",
-    bullets: ["Mehr Sichtbarkeit bei Google", "Bessere Reichweite fuer relevante Leistungen", "Mehr qualifizierte Anfragen"],
+    title: "SEO und Google Ads als Verstärker",
+    text: "Wenn die internen Grundlagen stehen, unterstütze ich Unternehmen dabei, auch nach außen sichtbarer zu werden. SEO und Google Ads sind dabei kein Selbstzweck, sondern ein strategisches Nebenprodukt eines smarten Business-Setups.",
+    bullets: ["Mehr Sichtbarkeit bei Google", "Bessere Reichweite für relevante Leistungen", "Mehr qualifizierte Anfragen"],
   },
 ];
 
@@ -35,17 +35,17 @@ const workflowSteps = [
   {
     step: "01",
     title: "Analyse",
-    text: "Wir identifizieren Engpaesse, manuelle Zeitfresser und Potenziale fuer KI und Automatisierung im aktuellen Setup.",
+    text: "Wir identifizieren Engpässe, manuelle Zeitfresser und Potenziale für KI und Automatisierung im aktuellen Setup.",
   },
   {
     step: "02",
     title: "Strategie",
-    text: "Ich entwickle ein klares Konzept fuer smarte Prozesse, KI-Einsatz, Automatisierung und bei Bedarf fuer Sichtbarkeit.",
+    text: "Ich entwickle ein klares Konzept für smarte Prozesse, KI-Einsatz, Automatisierung und bei Bedarf für Sichtbarkeit.",
   },
   {
     step: "03",
     title: "Umsetzung",
-    text: "Die Loesungen werden pragmatisch umgesetzt, priorisiert und an deinen operativen Alltag angepasst.",
+    text: "Die Lösungen werden pragmatisch umgesetzt, priorisiert und an deinen operativen Alltag angepasst.",
   },
   {
     step: "04",
@@ -57,72 +57,72 @@ const workflowSteps = [
 const highlights = [
   "Smart Business statt Einzelmassnahmen",
   "KI und Automatisierung mit Praxisbezug",
-  "Individuelle KI-Agenten fuer nahezu jeden Bereich",
+  "Individuelle KI-Agenten für nahezu jeden Bereich",
   "Fokus auf Zeitersparnis und Kostenkontrolle",
-  "SEO und Google Ads als Wachstumsergaenzung",
+  "SEO und Google Ads als Wachstumsergänzung",
 ];
 
 const faqItems = [
   {
-    question: "Fuer welche Unternehmen ist das interessant?",
+    question: "Für welche Unternehmen ist das interessant?",
     answer:
-      "Vor allem fuer kleine und mittlere Unternehmen, Dienstleister und lokale Betriebe, die mit KI und Automatisierung effizienter arbeiten und ihr Business smarter aufstellen wollen.",
+      "Vor allem für kleine und mittlere Unternehmen, Dienstleister und lokale Betriebe, die mit KI und Automatisierung effizienter arbeiten und ihr Business smarter aufstellen wollen.",
   },
   {
     question: "Liegt der Fokus auf Marketing oder auf Prozessen?",
     answer:
-      "Primaer auf smartem Business durch KI und Automatisierung. SEO und Google Ads kommen dann dazu, wenn sie als Verstaerker sinnvoll sind und zur Gesamtstrategie passen.",
+      "Primär auf smartem Business durch KI und Automatisierung. SEO und Google Ads kommen dann dazu, wenn sie als Verstärker sinnvoll sind und zur Gesamtstrategie passen.",
   },
   {
     question: "Kannst du auch individuelle KI-Agenten bauen?",
     answer:
-      "Ja. Ich entwickle individuelle KI-Agenten und Automationen fuer unterschiedliche Bereiche, zum Beispiel fuer Support, interne Prozesse, Anfragen, Wissenszugriff, Marketing oder andere wiederkehrende Aufgaben im Unternehmen.",
+      "Ja. Ich entwickle individuelle KI-Agenten und Automationen für unterschiedliche Bereiche, zum Beispiel für Support, interne Prozesse, Anfragen, Wissenszugriff, Marketing oder andere wiederkehrende Aufgaben im Unternehmen.",
   },
   {
     question: "Wo spart ein Unternehmen konkret Zeit und Kosten?",
     answer:
-      "Zum Beispiel bei manuellen Rueckfragen, wiederkehrenden Standardaufgaben, ineffizienten Abstimmungen, langsamer Lead-Bearbeitung oder fehlenden digitalen Prozessen.",
+      "Zum Beispiel bei manuellen Rückfragen, wiederkehrenden Standardaufgaben, ineffizienten Abstimmungen, langsamer Lead-Bearbeitung oder fehlenden digitalen Prozessen.",
   },
   {
     question: "Arbeitest du projektbasiert oder langfristig?",
     answer:
-      "Beides ist moeglich. Manche Unternehmen brauchen einen gezielten Einstieg in KI und Automatisierung, andere wollen ihr smartes Business laufend weiterentwickeln.",
+      "Beides ist möglich. Manche Unternehmen brauchen einen gezielten Einstieg in KI und Automatisierung, andere wollen ihr smartes Business laufend weiterentwickeln.",
   },
 ];
 
 const seoEntryPages = [
   {
-    title: "KI-Agenten fuer Unternehmen",
+    title: "KI-Agenten für Unternehmen",
     href: "/ki-agenten",
-    text: "Individuelle Agentenloesungen fuer Support, Prozesse, Wissen und Anfragen.",
+    text: "Individuelle Agentenlösungen für Support, Prozesse, Wissen und Anfragen.",
   },
   {
-    title: "Automatisierung fuer Unternehmen",
+    title: "Automatisierung für Unternehmen",
     href: "/automatisierung",
     text: "Wiederkehrende Aufgaben reduzieren und digitale Workflows sauberer aufbauen.",
   },
   {
     title: "SEO und Google Ads",
     href: "/seo-google-ads",
-    text: "Mehr Sichtbarkeit als gezielte Wachstumsergaenzung auf starkem Fundament.",
+    text: "Mehr Sichtbarkeit als gezielte Wachstumsergänzung auf starkem Fundament.",
   },
   {
     title: "SEO und Google Ads in Limburg",
     href: "/seo-google-ads-limburg",
-    text: "Regionale Sichtbarkeit fuer Unternehmen in Limburg und Umgebung.",
+    text: "Regionale Sichtbarkeit für Unternehmen in Limburg und Umgebung.",
   },
 ];
 
 const casePages = [
   {
-    title: "Case: KI-Agent und Anfrageprozess fuer Dienstleister",
+    title: "Case: KI-Agent und Anfrageprozess für Dienstleister",
     href: "/case-ki-agent-dienstleister",
-    text: "Ein Beispiel dafuer, wie Anfragen schneller qualifiziert und Prozesse entlastet werden koennen.",
+    text: "Ein Beispiel dafür, wie Anfragen schneller qualifiziert und Prozesse entlastet werden können.",
   },
   {
-    title: "Case: Automatisierung und Sichtbarkeit fuer regionalen Betrieb",
+    title: "Case: Automatisierung und Sichtbarkeit für regionalen Betrieb",
     href: "/case-automatisierung-regionaler-betrieb",
-    text: "Ein Szenario, wie interne Ablaeufe und digitale Sichtbarkeit gleichzeitig verbessert werden koennen.",
+    text: "Ein Szenario, wie interne Abläufe und digitale Sichtbarkeit gleichzeitig verbessert werden können.",
   },
 ];
 
@@ -172,7 +172,7 @@ export default function HomePage() {
                 onClick={() => setOpen(true)}
                 className="w-full rounded-full bg-[var(--ink-1)] px-5 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px] hover:bg-[var(--accent-2)] sm:w-auto sm:px-5 sm:py-2.5"
               >
-                Strategiegespraech anfragen
+                Strategiegespräch anfragen
               </button>
             </motion.header>
 
@@ -196,7 +196,7 @@ export default function HomePage() {
                   transition={{ delay: 0.08, duration: 0.7, ease: "easeOut" }}
                   className="mt-8 max-w-4xl text-4xl font-semibold leading-[0.98] tracking-[-0.05em] text-[var(--ink-1)] sm:text-5xl md:text-7xl"
                 >
-                  Smart Business fuer Unternehmen, die mit KI und Automatisierung Zeit und Kosten sparen wollen.
+                  Smart Business für Unternehmen, die mit KI und Automatisierung Zeit und Kosten sparen wollen.
                 </motion.h1>
 
                 <motion.p
@@ -206,8 +206,8 @@ export default function HomePage() {
                   className="mt-7 max-w-2xl text-base leading-7 text-[var(--muted)] sm:text-lg sm:leading-8 md:text-xl"
                 >
                   Ich helfe Unternehmen dabei, KI sinnvoll einzusetzen, Prozesse zu
-                  automatisieren und individuelle KI-Agenten fuer nahezu jeden Bereich zu
-                  entwickeln. SEO und Google Ads unterstuetzen dabei als Ergaenzung, um
+                  automatisieren und individuelle KI-Agenten für nahezu jeden Bereich zu
+                  entwickeln. SEO und Google Ads unterstützen dabei als Ergänzung, um
                   mehr Sichtbarkeit und qualifizierte Anfragen zu erreichen.
                 </motion.p>
 
@@ -279,14 +279,14 @@ export default function HomePage() {
                       <div className="text-sm text-white/55">KI</div>
                       <div className="mt-2 text-3xl font-semibold">Agenten</div>
                       <div className="mt-2 text-sm text-white/70">
-                        fuer Support, Prozesse, Wissen und mehr
+                        für Support, Prozesse, Wissen und mehr
                       </div>
                     </div>
                     <div className="rounded-2xl border border-white/10 bg-white/6 p-4">
                       <div className="text-sm text-white/55">Wachstum</div>
                       <div className="mt-2 text-3xl font-semibold">klarer</div>
                       <div className="mt-2 text-sm text-white/70">
-                        SEO und Ads als sinnvoller Verstaerker
+                        SEO und Ads als sinnvoller Verstärker
                       </div>
                     </div>
                   </div>
@@ -306,8 +306,8 @@ export default function HomePage() {
                         Fokus
                       </div>
                       <div className="mt-3 text-sm leading-6 text-white/78">
-                        Weniger Reibung im Alltag, schnellere Ablaeufe und ein Setup, das
-                        spuerbar entlastet.
+                        Weniger Reibung im Alltag, schnellere Abläufe und ein Setup, das
+                        spürbar entlastet.
                       </div>
                     </div>
                   </div>
@@ -364,7 +364,7 @@ export default function HomePage() {
             <div>
               <div className="font-semibold text-[var(--ink-1)]">Mehr Fokus</div>
               <p className="mt-2 leading-6 text-[var(--muted)]">
-                Weniger Chaos in operativen Ablaeufen bedeutet mehr Raum fuer Wachstum und Sichtbarkeit.
+                Weniger Chaos in operativen Abläufen bedeutet mehr Raum für Wachstum und Sichtbarkeit.
               </p>
             </div>
           </div>
@@ -381,7 +381,7 @@ export default function HomePage() {
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
               Ich kombiniere operative Optimierung mit digitaler Sichtbarkeit. Das Ziel
               ist nicht einfach nur ein modernes Auftreten, sondern ein smartes System,
-              das mit KI, KI-Agenten und Automatisierung im Alltag funktioniert und Wachstum unterstuetzt.
+              das mit KI, KI-Agenten und Automatisierung im Alltag funktioniert und Wachstum unterstützt.
             </p>
           </motion.div>
 
@@ -468,11 +468,11 @@ export default function HomePage() {
                 transition={{ duration: 0.5, delay: 0.18, ease: "easeOut" }}
                 className="rounded-[1.8rem] border border-white/10 bg-white/5 p-7 md:col-span-2"
               >
-                <div className="text-lg font-semibold">Website als Basis fuer Automatisierung und Sichtbarkeit</div>
+                <div className="text-lg font-semibold">Website als Basis für Automatisierung und Sichtbarkeit</div>
                 <p className="mt-4 text-sm leading-7 text-white/72">
                   Deine Website soll nicht nur gut aussehen. Sie soll Informationen klar
-                  transportieren, Prozesse unterstuetzen, KI-Loesungen anschlussfaehig
-                  machen und Besucher in qualifizierte Kontaktanfragen fuehren.
+                  transportieren, Prozesse unterstützen, KI-Lösungen anschlussfähig
+                  machen und Besucher in qualifizierte Kontaktanfragen führen.
                 </p>
               </motion.div>
             </div>
@@ -491,7 +491,7 @@ export default function HomePage() {
               <p className="mt-6 text-lg leading-8 text-[var(--muted)]">
                 Ich arbeite nicht nach dem Prinzip "ein bisschen von allem", sondern mit
                 klarer Priorisierung. Erst kommen KI, Automatisierung und smarte Prozesse,
-                einschliesslich individueller Agentenloesungen, dann die passenden Wachstumshebel nach aussen.
+                einschließlich individueller Agentenlösungen, dann die passenden Wachstumshebel nach außen.
               </p>
             </motion.div>
 
@@ -538,7 +538,7 @@ export default function HomePage() {
                   Warum ich
                 </div>
                 <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-[var(--ink-1)]">
-                  Technologie soll Unternehmen entlasten, nicht ueberfordern.
+                  Technologie soll Unternehmen entlasten, nicht überfordern.
                 </h2>
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)]">
                   Ich verbinde operative Perspektive mit digitalem Denken. Das bedeutet:
@@ -575,7 +575,7 @@ export default function HomePage() {
               SEO-Struktur
             </div>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-[var(--ink-1)] md:text-5xl">
-              Wichtige Einstiegsseiten fuer Google und Besucher
+              Wichtige Einstiegsseiten für Google und Besucher
             </h2>
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
               Damit Google die Themen sauber einordnen kann, sind die wichtigsten
@@ -615,12 +615,12 @@ export default function HomePage() {
                 Cases
               </div>
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-[var(--ink-1)] md:text-5xl">
-                Beispiel-Szenarien fuer reale Unternehmensprobleme
+                Beispiel-Szenarien für reale Unternehmensprobleme
               </h2>
               <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
                 Cases helfen nicht nur bei Vertrauen und Conversion, sondern auch bei SEO.
                 Sie zeigen Google und Besuchern, wie KI, Automatisierung und Sichtbarkeit
-                konkret zusammenspielen koennen.
+                konkret zusammenspielen können.
               </p>
             </motion.div>
 
@@ -655,7 +655,7 @@ export default function HomePage() {
               FAQ
             </div>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-[var(--ink-1)] md:text-5xl">
-              Haeufige Fragen
+              Häufige Fragen
             </h2>
           </div>
 
@@ -685,13 +685,13 @@ export default function HomePage() {
             <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-end">
               <div>
                 <div className="text-sm font-semibold uppercase tracking-[0.28em] text-white/55">
-                  Naechster Schritt
+                  Nächster Schritt
                 </div>
                 <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
                   Lass uns herausfinden, wo dein Unternehmen smarter werden kann.
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-white/72">
-                  In einem unverbindlichen Gespraech schauen wir auf Prozesse,
+                  In einem unverbindlichen Gespräch schauen wir auf Prozesse,
                   KI-Potenziale, Automatisierung und konkrete Optimierungspotenziale.
                   Klar, praxisnah und ohne Verkaufsdruck.
                 </p>
@@ -702,7 +702,7 @@ export default function HomePage() {
                   onClick={() => setOpen(true)}
                   className="rounded-full bg-white px-7 py-4 text-base font-semibold text-[var(--ink-1)] transition hover:bg-[var(--surface-1)]"
                 >
-                  Strategiegespraech anfragen
+                  Strategiegespräch anfragen
                 </button>
                 <div className="text-sm text-white/60">
                   30 Minuten. Unverbindlich. Direkt auf dein Unternehmen bezogen.

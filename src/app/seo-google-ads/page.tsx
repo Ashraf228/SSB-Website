@@ -2,24 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "SEO und Google Ads fuer Unternehmen in Limburg, Hessen und Deutschland",
+  title: "SEO und Google Ads für Unternehmen in Limburg, Hessen und Deutschland",
   description:
-    "SEO und Google Ads fuer Unternehmen in Limburg, Hessen und Deutschland: mehr Sichtbarkeit, gezieltere Anfragen und ein sauberer Wachstumshebel auf Basis eines starken digitalen Setups.",
+    "SEO und Google Ads für Unternehmen in Limburg, Hessen und Deutschland: mehr Sichtbarkeit, gezieltere Anfragen und ein sauberer Wachstumshebel auf Basis eines starken digitalen Setups.",
   alternates: { canonical: "https://soulesmartbusiness.com/seo-google-ads" },
 };
 
 const sections = [
   {
-    title: "SEO fuer nachhaltige Sichtbarkeit",
-    text: "SEO sorgt dafuer, dass dein Unternehmen langfristig relevanter gefunden wird. Dazu gehoeren Seitenstruktur, Inhalte, interne Verlinkung und klare Suchintentionen.",
+    title: "SEO für nachhaltige Sichtbarkeit",
+    text: "SEO sorgt dafür, dass dein Unternehmen langfristig relevanter gefunden wird. Dazu gehören Seitenstruktur, Inhalte, interne Verlinkung und klare Suchintentionen.",
   },
   {
-    title: "Google Ads fuer gezielte Reichweite",
+    title: "Google Ads für gezielte Reichweite",
     text: "Google Ads ist sinnvoll, wenn Kampagnen an die Leistungen, Zielgruppen und Business-Ziele gekoppelt werden und nicht nur Budget verbrennen.",
   },
   {
     title: "Mehr Wirkung mit starkem Fundament",
-    text: "Am besten funktionieren SEO und Ads, wenn Website, Prozesse und Angebote sauber aufgesetzt sind. Deshalb ist Sichtbarkeit bei mir Teil eines groesseren Smart-Business-Systems.",
+    text: "Am besten funktionieren SEO und Ads, wenn Website, Prozesse und Angebote sauber aufgesetzt sind. Deshalb ist Sichtbarkeit bei mir Teil eines größeren Smart-Business-Systems.",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function SeoGoogleAdsPage() {
         <p className="mt-8 max-w-3xl text-lg leading-8 text-[var(--muted)]">
           SEO und Google Ads helfen Unternehmen dabei, gezielter gefunden zu werden und
           mehr relevante Anfragen aufzubauen. Ich setze diese Hebel nicht isoliert ein,
-          sondern als sinnvolle Wachstumsergaenzung eines starken digitalen Setups fuer
+          sondern als sinnvolle Wachstumsergänzung eines starken digitalen Setups für
           Unternehmen in Limburg, Hessen und ganz Deutschland.
         </p>
 
@@ -55,7 +55,7 @@ export default function SeoGoogleAdsPage() {
             Wenn Angebote unklar sind, Seiten keine Struktur haben oder Prozesse intern
             nicht sauber laufen, wird Sichtbarkeit schnell teuer oder ineffizient.
             Deshalb sind SEO und Google Ads bei mir Teil eines smarten Business-Setups und
-            nicht nur isolierte Marketing-Massnahmen.
+            nicht nur isolierte Marketing-Maßnahmen.
           </p>
         </div>
 
@@ -82,8 +82,8 @@ export default function SeoGoogleAdsPage() {
             </h2>
             <p className="mt-5 text-base leading-8 text-[var(--muted)]">
               Diese Seite ist auch auf lokale Suchanfragen wie `SEO Limburg`,
-              `Google Ads Limburg`, `SEO Agentur Hessen` oder `Google Ads fuer Unternehmen`
-              ausgerichtet, damit regionale und ueberregionale Sichtbarkeit gleichzeitig
+              `Google Ads Limburg`, `SEO Agentur Hessen` oder `Google Ads für Unternehmen`
+              ausgerichtet, damit regionale und überregionale Sichtbarkeit gleichzeitig
               aufgebaut werden kann.
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function SeoGoogleAdsPage() {
             </h2>
             <p className="mt-5 text-base leading-8 text-[var(--muted)]">
               Mehr qualifizierte Anfragen, besser planbare Reichweite und eine Website,
-              die Suchintention, Nutzerfuehrung und Conversion staerker zusammenbringt.
+              die Suchintention, Nutzerführung und Conversion stärker zusammenbringt.
             </p>
           </div>
         </div>

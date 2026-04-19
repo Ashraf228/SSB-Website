@@ -71,9 +71,9 @@ export default function ContactModal({
           >
             <div className="p-7 md:p-8 border-b border-black/10 flex items-center justify-between">
               <div>
-                <div className="text-xl font-bold">Strategiegespraech anfragen</div>
+                <div className="text-xl font-bold">Strategiegespräch anfragen</div>
                 <div className="text-sm text-gray-600 mt-1">
-                  Kurz beschreiben, wo Sie KI, Automatisierung oder smartere Prozesse im Unternehmen aufbauen moechten.
+                  Kurz beschreiben, wo Sie KI, Automatisierung oder smartere Prozesse im Unternehmen aufbauen möchten.
                 </div>
               </div>
               <button onClick={onClose} className="text-gray-500 hover:text-black">

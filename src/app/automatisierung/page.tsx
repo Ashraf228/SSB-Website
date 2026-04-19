@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Automatisierung fuer Unternehmen in Limburg, Hessen und Deutschland",
+  title: "Automatisierung für Unternehmen in Limburg, Hessen und Deutschland",
   description:
-    "Automatisierung fuer Unternehmen in Limburg, Hessen und Deutschland: wiederkehrende Aufgaben reduzieren, Prozesse beschleunigen und Zeit sowie Kosten sparen.",
+    "Automatisierung für Unternehmen in Limburg, Hessen und Deutschland: wiederkehrende Aufgaben reduzieren, Prozesse beschleunigen und Zeit sowie Kosten sparen.",
   alternates: { canonical: "https://soulesmartbusiness.com/automatisierung" },
 };
 
@@ -14,16 +14,16 @@ const benefits = [
     text: "Wiederkehrende Aufgaben kosten oft mehr Zeit als sie auf den ersten Blick scheinen. Automatisierung reduziert diese Reibung deutlich.",
   },
   {
-    title: "Sauberere Uebergaben zwischen Schritten und Teams",
-    text: "Wenn Prozesse sauber definiert und digital verknuepft sind, entstehen weniger Missverstaendnisse und weniger Leerlauf.",
+    title: "Sauberere Übergaben zwischen Schritten und Teams",
+    text: "Wenn Prozesse sauber definiert und digital verknüpft sind, entstehen weniger Missverständnisse und weniger Leerlauf.",
   },
   {
     title: "Schnellere Bearbeitung von Anfragen und internen Aufgaben",
-    text: "Anfragen, Freigaben und Standardprozesse laufen strukturierter, schneller und verlaesslicher.",
+    text: "Anfragen, Freigaben und Standardprozesse laufen strukturierter, schneller und verlässlicher.",
   },
   {
     title: "Mehr Transparenz in wiederkehrenden Prozessen",
-    text: "Unternehmen sehen klarer, wo Aufgaben haengen bleiben, wo Zeit verloren geht und wo Automatisierung am meisten bringt.",
+    text: "Unternehmen sehen klarer, wo Aufgaben hängen bleiben, wo Zeit verloren geht und wo Automatisierung am meisten bringt.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function AutomatisierungPage() {
           Automatisierung
         </div>
         <h1 className="mt-4 max-w-4xl text-5xl font-semibold tracking-[-0.04em] text-[var(--ink-1)]">
-          Automatisierung fuer Unternehmen
+          Automatisierung für Unternehmen
         </h1>
         <p className="mt-8 max-w-3xl text-lg leading-8 text-[var(--muted)]">
           Automatisierung spart nicht nur Zeit, sondern reduziert operative Reibung. Ich
@@ -53,13 +53,13 @@ export default function AutomatisierungPage() {
 
         <div className="mt-8 rounded-[1.8rem] border border-[var(--line)] bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.05)]">
           <h2 className="text-2xl font-semibold tracking-[-0.03em] text-[var(--ink-1)]">
-            Warum Automatisierung fuer Unternehmen so viel Hebel hat
+            Warum Automatisierung für Unternehmen so viel Hebel hat
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-8 text-[var(--muted)]">
-            Viele Unternehmen verlieren taeglich Zeit durch manuelle Zwischenschritte,
-            doppelte Bearbeitung, unklare Uebergaben und fehlende digitale Struktur.
-            Automatisierung fuer Unternehmen setzt genau dort an und sorgt dafuer, dass
-            Aufgaben robuster, schneller und verlaesslicher ablaufen.
+            Viele Unternehmen verlieren täglich Zeit durch manuelle Zwischenschritte,
+            doppelte Bearbeitung, unklare Übergaben und fehlende digitale Struktur.
+            Automatisierung für Unternehmen setzt genau dort an und sorgt dafür, dass
+            Aufgaben robuster, schneller und verlässlicher ablaufen.
           </p>
         </div>
 
@@ -92,7 +92,8 @@ export default function AutomatisierungPage() {
               Wichtige Suchsignale
             </h2>
             <p className="mt-5 text-base leading-8 text-[var(--muted)]">
-              Diese Seite ist bewusst auf Begriffe wie `Automatisierung fuer Unternehmen`,
+              Diese Seite ist bewusst auf Begriffe wie `Automatisierung für Unternehmen`,
+              `Automatisierung für Unternehmen`,
               `Prozessautomatisierung Unternehmen`, `Automatisierung Limburg` und
               `Automatisierung Mittelstand` ausgerichtet, damit Google den konkreten
               Suchintent sauber erkennen kann.
@@ -106,10 +107,10 @@ export default function AutomatisierungPage() {
           </h2>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/ki-agenten" className="rounded-full border border-[var(--line)] px-4 py-2 text-sm font-medium text-[var(--ink-2)] transition hover:border-[var(--accent-2)] hover:text-[var(--accent-2)]">
-              KI-Agenten fuer Unternehmen
+              KI-Agenten für Unternehmen
             </Link>
             <Link href="/automatisierung-dienstleister" className="rounded-full border border-[var(--line)] px-4 py-2 text-sm font-medium text-[var(--ink-2)] transition hover:border-[var(--accent-2)] hover:text-[var(--accent-2)]">
-              Automatisierung fuer Dienstleister
+              Automatisierung für Dienstleister
             </Link>
             <Link href="/seo-google-ads" className="rounded-full border border-[var(--line)] px-4 py-2 text-sm font-medium text-[var(--ink-2)] transition hover:border-[var(--accent-2)] hover:text-[var(--accent-2)]">
               SEO und Google Ads

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "SEO und Google Ads in Limburg",
   description:
-    "SEO und Google Ads in Limburg: mehr Sichtbarkeit fuer Unternehmen in Limburg und Umgebung durch eine saubere digitale Strategie.",
+    "SEO und Google Ads in Limburg: mehr Sichtbarkeit für Unternehmen in Limburg und Umgebung durch eine saubere digitale Strategie.",
   alternates: { canonical: "https://soulesmartbusiness.com/seo-google-ads-limburg" },
 };
 
@@ -16,7 +16,7 @@ export default function SeoGoogleAdsLimburgPage() {
         <div className="mt-10 text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent-2)]">Lokal</div>
         <h1 className="mt-4 text-5xl font-semibold tracking-[-0.04em]">SEO und Google Ads in Limburg</h1>
         <p className="mt-8 text-lg leading-8 text-[var(--muted)]">
-          Fuer Unternehmen in Limburg und Umgebung koennen SEO und Google Ads ein starker
+          Für Unternehmen in Limburg und Umgebung können SEO und Google Ads ein starker
           Hebel sein, wenn Leistungen klar kommuniziert, Seiten sauber aufgebaut und
           Kampagnen auf echte Business-Ziele ausgerichtet sind.
         </p>

@@ -21,6 +21,30 @@ export default function KIAgentenHandwerkPage() {
           bereitgestellt werden sollen. Gerade in regionalen Betrieben in Limburg und
           Hessen entsteht so mehr Entlastung im Tagesgeschäft.
         </p>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="rounded-[1.8rem] border border-[var(--line)] bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.05)]">
+            <h2 className="text-2xl font-semibold tracking-[-0.03em] text-[var(--ink-1)]">
+              Wo KI-Agenten im Handwerk helfen
+            </h2>
+            <p className="mt-4 text-base leading-8 text-[var(--muted)]">
+              Zum Beispiel bei der Vorqualifizierung von Anfragen, bei Standardantworten,
+              bei der Aufbereitung von Leistungsinfos, bei Terminvorbereitung oder beim
+              schnelleren Zugriff auf internes Wissen und wiederkehrende Abläufe.
+            </p>
+          </div>
+
+          <div className="rounded-[1.8rem] border border-[var(--line)] bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.05)]">
+            <h2 className="text-2xl font-semibold tracking-[-0.03em] text-[var(--ink-1)]">
+              Warum das gerade regional wichtig ist
+            </h2>
+            <p className="mt-4 text-base leading-8 text-[var(--muted)]">
+              Viele Betriebe arbeiten mit knappen Kapazitäten. Wenn Anfragen sauberer
+              gefiltert, Informationen schneller bereitgestellt und Prozesse klarer
+              vorbereitet werden, entsteht spürbar mehr Ruhe im Tagesgeschäft.
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   );

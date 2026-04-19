@@ -20,6 +20,30 @@ export default function AutomatisierungDienstleisterPage() {
           Terminabstimmungen oder interne Freigaben zu viel operative Zeit kosten.
           Automatisierung hilft, Abläufe robuster und skalierbarer zu machen.
         </p>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="rounded-[1.8rem] border border-[var(--line)] bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.05)]">
+            <h2 className="text-2xl font-semibold tracking-[-0.03em] text-[var(--ink-1)]">
+              Typische Hebel für Dienstleister
+            </h2>
+            <p className="mt-4 text-base leading-8 text-[var(--muted)]">
+              Anfrageannahme, Terminvorbereitung, Angebotsprozesse, interne Übergaben,
+              Nachfassstrecken und wiederkehrende Kommunikation lassen sich oft deutlich
+              strukturierter und effizienter aufsetzen.
+            </p>
+          </div>
+
+          <div className="rounded-[1.8rem] border border-[var(--line)] bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.05)]">
+            <h2 className="text-2xl font-semibold tracking-[-0.03em] text-[var(--ink-1)]">
+              Der konkrete Nutzen
+            </h2>
+            <p className="mt-4 text-base leading-8 text-[var(--muted)]">
+              Weniger manuelle Rückfragen, schnellere Reaktionszeiten, mehr Transparenz
+              im Prozess und ein Team, das sich stärker auf wertschöpfende Aufgaben
+              konzentrieren kann.
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   );

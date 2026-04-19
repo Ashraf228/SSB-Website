@@ -53,7 +53,7 @@ export default function KIAgentenPage() {
         </h1>
         <p className="mt-8 max-w-3xl text-lg leading-8 text-[var(--muted)]">
           KI-Agenten helfen Unternehmen dabei, Informationen schneller verfügbar zu
-          machen, Aufgaben sauberer zu bearbeiten und wiederkehrende Prozesse intelligent
+          machen, Aufgaben klarer zu bearbeiten und wiederkehrende Prozesse intelligent
           zu unterstützen. Ich entwickle individuelle Agentenlösungen für Unternehmen
           in Limburg, Hessen und ganz Deutschland, die sich am realen Alltag deines
           Unternehmens orientieren.
@@ -91,13 +91,13 @@ export default function KIAgentenPage() {
             <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--muted)]">
               KI-Agenten können Support entlasten, Wissen schneller nutzbar machen,
               standardisierte Aufgaben vorbereiten und Informationen aus verschiedenen
-              Quellen strukturierter bereitstellen. Dadurch entsteht ein smarteres Business,
+              Quellen strukturiert bereitstellen. Dadurch entsteht ein smarteres Business,
               das weniger von manueller Reibung abhängig ist.
             </p>
             <p className="mt-4 max-w-3xl text-base leading-8 text-[var(--muted)]">
               Wenn du nach `KI-Agenten für Unternehmen`, `KI-Agenten Limburg` oder
               `KI-Agenten für den Mittelstand` suchst, ist meistens genau das der
-              Hintergrund: Prozesse sollen effizienter, schneller und verlässlicher werden.
+              Hintergrund: Prozesse sollen effizienter, schneller und verlässlicher laufen.
             </p>
           </div>
 

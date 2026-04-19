@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Case: KI-Agent und Anfrageprozess für Dienstleister",
   description:
-    "Case-Szenario: Wie ein KI-Agent für Dienstleister Anfragen besser qualifiziert, Wissen schneller bereitstellt und Prozesse entlastet.",
+    "Praxisnahes Beispiel, wie ein KI-Agent für Dienstleister Anfragen besser qualifiziert, Wissen schneller bereitstellt und Prozesse entlastet.",
   alternates: {
     canonical: "https://soulesmartbusiness.com/case-ki-agent-dienstleister",
   },
@@ -28,10 +28,10 @@ export default function CaseKIAgentDienstleisterPage() {
           KI-Agent und Anfrageprozess für Dienstleister
         </h1>
         <p className="mt-8 max-w-3xl text-lg leading-8 text-[var(--muted)]">
-          Ein typisches Szenario: Ein Dienstleistungsunternehmen erhält viele Anfragen,
-          beantwortet häufig dieselben Rückfragen und verliert Zeit bei der
-          Vorqualifizierung. Ein KI-Agent kann hier als intelligenter Vorfilter und
-          Wissenszugang dienen.
+          Viele Dienstleister erhalten laufend Anfragen, beantworten dieselben Rückfragen
+          immer wieder und verlieren Zeit bei der Vorqualifizierung. Ein KI-Agent kann
+          hier als intelligenter Vorfilter, Wissenszugang und Entlastung im ersten
+          Kontaktpunkt dienen.
         </p>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2">
@@ -62,7 +62,7 @@ export default function CaseKIAgentDienstleisterPage() {
               Unternehmen spannend, die nach `KI-Agenten für Dienstleister` oder
               `KI-Agenten für Unternehmen` suchen.
             </p>
-          </div>
+        </div>
       </div>
     </main>
   );

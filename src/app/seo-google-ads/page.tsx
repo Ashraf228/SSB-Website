@@ -43,7 +43,7 @@ export default function SeoGoogleAdsPage() {
         <p className="mt-8 max-w-3xl text-lg leading-8 text-[var(--muted)]">
           SEO und Google Ads helfen Unternehmen dabei, gezielter gefunden zu werden und
           mehr relevante Anfragen aufzubauen. Ich setze diese Hebel nicht isoliert ein,
-          sondern als sinnvolle Wachstumsergänzung eines starken digitalen Setups für
+          sondern als sinnvolle Wachstumsergänzung innerhalb eines starken digitalen Setups für
           Unternehmen in Limburg, Hessen und ganz Deutschland.
         </p>
 
@@ -93,8 +93,8 @@ export default function SeoGoogleAdsPage() {
               Was Unternehmen davon haben
             </h2>
             <p className="mt-5 text-base leading-8 text-[var(--muted)]">
-              Mehr qualifizierte Anfragen, besser planbare Reichweite und eine Website,
-              die Suchintention, Nutzerführung und Conversion stärker zusammenbringt.
+              Mehr qualifizierte Anfragen, planbarere Reichweite und eine Website, die
+              Suchintention, Nutzerführung und Conversion besser zusammenbringt.
             </p>
           </div>
         </div>

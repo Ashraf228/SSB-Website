@@ -20,6 +20,30 @@ export default function SeoGoogleAdsLimburgPage() {
           Hebel sein, wenn Leistungen klar kommuniziert, Seiten sauber aufgebaut und
           Kampagnen auf echte Business-Ziele ausgerichtet sind.
         </p>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="rounded-[1.8rem] border border-[var(--line)] bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.05)]">
+            <h2 className="text-2xl font-semibold tracking-[-0.03em] text-[var(--ink-1)]">
+              Lokale Sichtbarkeit mit Struktur
+            </h2>
+            <p className="mt-4 text-base leading-8 text-[var(--muted)]">
+              Regionale Suchanfragen funktionieren dann besonders gut, wenn Website,
+              Leistungen, Standorte und Nutzerführung klar aufgebaut sind. So versteht
+              Google besser, wofür dein Unternehmen in Limburg relevant ist.
+            </p>
+          </div>
+
+          <div className="rounded-[1.8rem] border border-[var(--line)] bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.05)]">
+            <h2 className="text-2xl font-semibold tracking-[-0.03em] text-[var(--ink-1)]">
+              Was Unternehmen davon haben
+            </h2>
+            <p className="mt-4 text-base leading-8 text-[var(--muted)]">
+              Mehr qualifizierte lokale Anfragen, planbarere Reichweite und eine digitale
+              Präsenz, die nicht nur sichtbar ist, sondern auch Vertrauen aufbaut und
+              Kontakte wahrscheinlicher macht.
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   );

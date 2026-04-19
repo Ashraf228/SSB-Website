@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Case: Automatisierung und Sichtbarkeit für regionalen Betrieb",
   description:
-    "Case-Szenario: Wie ein regionaler Betrieb durch Automatisierung, klare Website-Struktur und lokale Sichtbarkeit entlastet werden kann.",
+    "Praxisnahes Beispiel, wie ein regionaler Betrieb durch Automatisierung, klare Website-Struktur und lokale Sichtbarkeit entlastet werden kann.",
   alternates: {
     canonical:
       "https://soulesmartbusiness.com/case-automatisierung-regionaler-betrieb",
@@ -29,9 +29,9 @@ export default function CaseAutomatisierungRegionalerBetriebPage() {
           Automatisierung und Sichtbarkeit für regionalen Betrieb
         </h1>
         <p className="mt-8 max-w-3xl text-lg leading-8 text-[var(--muted)]">
-          Ein typisches Szenario für einen regionalen Betrieb aus Limburg oder Umgebung:
-          viele manuelle Abstimmungen, wiederkehrende Rückfragen und gleichzeitig der
-          Wunsch, bei Google besser sichtbar zu sein.
+          Viele regionale Betriebe aus Limburg und Umgebung kämpfen gleichzeitig mit
+          manuellen Abstimmungen, wiederkehrenden Rückfragen und dem Wunsch, bei Google
+          besser gefunden zu werden.
         </p>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -44,7 +44,7 @@ export default function CaseAutomatisierungRegionalerBetriebPage() {
             </p>
           </div>
           <div className="rounded-[1.8rem] border border-[var(--line)] bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.05)]">
-            <h2 className="text-xl font-semibold text-[var(--ink-1)]">Massnahmen</h2>
+            <h2 className="text-xl font-semibold text-[var(--ink-1)]">Maßnahmen</h2>
             <p className="mt-4 text-base leading-8 text-[var(--muted)]">
               Anfrageprozess strukturieren, wiederkehrende Schritte automatisieren und
               Website sowie lokale SEO-Signale für Suchanfragen in Limburg verbessern.

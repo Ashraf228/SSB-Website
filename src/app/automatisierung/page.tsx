@@ -47,8 +47,8 @@ export default function AutomatisierungPage() {
         <p className="mt-8 max-w-3xl text-lg leading-8 text-[var(--muted)]">
           Automatisierung spart nicht nur Zeit, sondern reduziert operative Reibung. Ich
           helfe Unternehmen in Limburg, Hessen und ganz Deutschland dabei, wiederkehrende
-          Aufgaben sauberer zu strukturieren und digitale Workflows aufzubauen, die im
-          Alltag wirklich entlasten.
+          Aufgaben klarer zu strukturieren und digitale Workflows aufzubauen, die im
+          Alltag zuverlässig entlasten.
         </p>
 
         <div className="mt-8 rounded-[1.8rem] border border-[var(--line)] bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.05)]">
@@ -93,7 +93,6 @@ export default function AutomatisierungPage() {
             </h2>
             <p className="mt-5 text-base leading-8 text-[var(--muted)]">
               Diese Seite ist bewusst auf Begriffe wie `Automatisierung für Unternehmen`,
-              `Automatisierung für Unternehmen`,
               `Prozessautomatisierung Unternehmen`, `Automatisierung Limburg` und
               `Automatisierung Mittelstand` ausgerichtet, damit Google den konkreten
               Suchintent sauber erkennen kann.

@@ -11,23 +11,23 @@ const servicePillars = [
   {
     eyebrow: "KI",
     href: "/ki-agenten",
-    title: "KI-Lösungen und Agenten, die im Unternehmen wirklich entlasten",
-    text: "Ich entwickle smarte KI-gestützte Lösungen und KI-Agenten, die Informationen schneller verfügbar machen, wiederkehrende Aufgaben vereinfachen und Teams im Alltag konkret unterstützen.",
-    bullets: ["KI-Agenten für verschiedene Bereiche", "Schnellere Antworten", "Mehr Entlastung im Tagesgeschäft"],
+    title: "KI-Lösungen und Agenten, die dein Unternehmen spürbar entlasten",
+    text: "Ich entwickle individuelle KI-Lösungen und Agenten, die Informationen schneller nutzbar machen, wiederkehrende Aufgaben vereinfachen und Teams im Alltag konkret entlasten.",
+    bullets: ["KI-Agenten für verschiedene Bereiche", "Schnellere Antworten", "Weniger operative Reibung"],
   },
   {
     eyebrow: "Automatisierung",
     href: "/automatisierung",
-    title: "Prozesse automatisieren statt Zeit zu verlieren",
-    text: "Der Fokus liegt auf smartem Business: weniger manuelle Arbeit, weniger Reibung und klarere digitale Abläufe. So sparen Unternehmen Zeit, senken Kosten und gewinnen operative Ruhe.",
-    bullets: ["Automatisierte Routinen", "Klare digitale Workflows", "Weniger Reibung zwischen Aufgaben"],
+    title: "Prozesse automatisieren und Zeit gezielt zurückgewinnen",
+    text: "Wiederkehrende Aufgaben, manuelle Abstimmungen und unklare Übergaben bremsen viele Unternehmen aus. Mit sauberen digitalen Abläufen wird dein Tagesgeschäft spürbar ruhiger, schneller und effizienter.",
+    bullets: ["Automatisierte Routinen", "Klare digitale Workflows", "Mehr Tempo im Tagesgeschäft"],
   },
   {
     eyebrow: "Wachstum",
     href: "/seo-google-ads",
-    title: "SEO und Google Ads als Verstärker",
-    text: "Wenn die internen Grundlagen stehen, unterstütze ich Unternehmen dabei, auch nach außen sichtbarer zu werden. SEO und Google Ads sind dabei kein Selbstzweck, sondern ein strategisches Nebenprodukt eines smarten Business-Setups.",
-    bullets: ["Mehr Sichtbarkeit bei Google", "Bessere Reichweite für relevante Leistungen", "Mehr qualifizierte Anfragen"],
+    title: "SEO und Google Ads als gezielter Wachstumsschub",
+    text: "Wenn interne Prozesse, Website und Angebot sauber aufgestellt sind, werden SEO und Google Ads zum echten Hebel. So entsteht Sichtbarkeit, die nicht nur Klicks bringt, sondern qualifizierte Anfragen unterstützt.",
+    bullets: ["Mehr Sichtbarkeit bei Google", "Relevantere Reichweite", "Bessere Anfragequalität"],
   },
 ];
 
@@ -35,27 +35,27 @@ const workflowSteps = [
   {
     step: "01",
     title: "Analyse",
-    text: "Wir identifizieren Engpässe, manuelle Zeitfresser und Potenziale für KI und Automatisierung im aktuellen Setup.",
+    text: "Wir schauen uns an, wo aktuell Zeit verloren geht, Prozesse stocken und KI oder Automatisierung den größten Hebel haben.",
   },
   {
     step: "02",
     title: "Strategie",
-    text: "Ich entwickle ein klares Konzept für smarte Prozesse, KI-Einsatz, Automatisierung und bei Bedarf für Sichtbarkeit.",
+    text: "Ich entwickle eine klare Roadmap für smarte Prozesse, sinnvollen KI-Einsatz, Automatisierung und bei Bedarf für mehr Sichtbarkeit.",
   },
   {
     step: "03",
     title: "Umsetzung",
-    text: "Die Lösungen werden pragmatisch umgesetzt, priorisiert und an deinen operativen Alltag angepasst.",
+    text: "Die Lösungen werden pragmatisch umgesetzt, priorisiert und auf deinen tatsächlichen Unternehmensalltag abgestimmt.",
   },
   {
     step: "04",
     title: "Optimierung",
-    text: "Wir verbessern, was funktioniert, und bauen Prozesse, Automationen und Sichtbarkeit schrittweise weiter aus.",
+    text: "Was funktioniert, wird gezielt ausgebaut. So entstehen Schritt für Schritt bessere Prozesse, stärkere Automationen und nachhaltiges Wachstum.",
   },
 ];
 
 const highlights = [
-  "Smart Business statt Einzelmassnahmen",
+  "Smart Business statt Einzelmaßnahmen",
   "KI und Automatisierung mit Praxisbezug",
   "Individuelle KI-Agenten für nahezu jeden Bereich",
   "Fokus auf Zeitersparnis und Kostenkontrolle",
@@ -66,27 +66,27 @@ const faqItems = [
   {
     question: "Für welche Unternehmen ist das interessant?",
     answer:
-      "Vor allem für kleine und mittlere Unternehmen, Dienstleister und lokale Betriebe, die mit KI und Automatisierung effizienter arbeiten und ihr Business smarter aufstellen wollen.",
+      "Vor allem für kleine und mittlere Unternehmen, Dienstleister und lokale Betriebe, die mit KI und Automatisierung effizienter arbeiten und ihr Unternehmen smarter aufstellen wollen.",
   },
   {
     question: "Liegt der Fokus auf Marketing oder auf Prozessen?",
     answer:
-      "Primär auf smartem Business durch KI und Automatisierung. SEO und Google Ads kommen dann dazu, wenn sie als Verstärker sinnvoll sind und zur Gesamtstrategie passen.",
+      "Der Schwerpunkt liegt klar auf KI, Automatisierung und smarten Prozessen. SEO und Google Ads ergänzen das Ganze dann, wenn sie strategisch sinnvoll sind.",
   },
   {
     question: "Kannst du auch individuelle KI-Agenten bauen?",
     answer:
-      "Ja. Ich entwickle individuelle KI-Agenten und Automationen für unterschiedliche Bereiche, zum Beispiel für Support, interne Prozesse, Anfragen, Wissenszugriff, Marketing oder andere wiederkehrende Aufgaben im Unternehmen.",
+      "Ja. Ich entwickle individuelle KI-Agenten und Automationen für Support, interne Prozesse, Anfragen, Wissenszugriff, Marketing und andere wiederkehrende Aufgaben im Unternehmen.",
   },
   {
     question: "Wo spart ein Unternehmen konkret Zeit und Kosten?",
     answer:
-      "Zum Beispiel bei manuellen Rückfragen, wiederkehrenden Standardaufgaben, ineffizienten Abstimmungen, langsamer Lead-Bearbeitung oder fehlenden digitalen Prozessen.",
+      "Zum Beispiel bei manuellen Rückfragen, Standardaufgaben, ineffizienten Abstimmungen, langsamer Lead-Bearbeitung oder fehlenden digitalen Prozessen.",
   },
   {
     question: "Arbeitest du projektbasiert oder langfristig?",
     answer:
-      "Beides ist möglich. Manche Unternehmen brauchen einen gezielten Einstieg in KI und Automatisierung, andere wollen ihr smartes Business laufend weiterentwickeln.",
+      "Beides ist möglich. Manche Unternehmen brauchen einen klaren Einstieg in KI und Automatisierung, andere wollen ihr Setup laufend weiterentwickeln.",
   },
 ];
 
@@ -99,12 +99,12 @@ const seoEntryPages = [
   {
     title: "Automatisierung für Unternehmen",
     href: "/automatisierung",
-    text: "Wiederkehrende Aufgaben reduzieren und digitale Workflows sauberer aufbauen.",
+    text: "Wiederkehrende Aufgaben reduzieren und Workflows deutlich klarer aufbauen.",
   },
   {
     title: "SEO und Google Ads",
     href: "/seo-google-ads",
-    text: "Mehr Sichtbarkeit als gezielte Wachstumsergänzung auf starkem Fundament.",
+    text: "Mehr Sichtbarkeit als strategische Wachstumsergänzung auf starkem Fundament.",
   },
   {
     title: "SEO und Google Ads in Limburg",
@@ -117,12 +117,12 @@ const casePages = [
   {
     title: "Case: KI-Agent und Anfrageprozess für Dienstleister",
     href: "/case-ki-agent-dienstleister",
-    text: "Ein Beispiel dafür, wie Anfragen schneller qualifiziert und Prozesse entlastet werden können.",
+    text: "Wie ein KI-Agent Anfragen vorqualifiziert, Wissen schneller bereitstellt und Teams im Tagesgeschäft spürbar entlastet.",
   },
   {
     title: "Case: Automatisierung und Sichtbarkeit für regionalen Betrieb",
     href: "/case-automatisierung-regionaler-betrieb",
-    text: "Ein Szenario, wie interne Abläufe und digitale Sichtbarkeit gleichzeitig verbessert werden können.",
+    text: "Wie ein regionaler Betrieb interne Abläufe strafft und gleichzeitig lokal deutlich besser bei Google gefunden wird.",
   },
 ];
 
@@ -186,7 +186,7 @@ export default function HomePage() {
                 >
                   <span className="h-2 w-2 rounded-full bg-[var(--accent-1)]" />
                   <span className="truncate sm:whitespace-normal">
-                    KI nutzen. Agenten bauen. Prozesse automatisieren. Business smarter machen.
+                    KI nutzen. Agenten bauen. Prozesse automatisieren. Unternehmen smarter aufstellen.
                   </span>
                 </motion.div>
 
@@ -196,7 +196,7 @@ export default function HomePage() {
                   transition={{ delay: 0.08, duration: 0.7, ease: "easeOut" }}
                   className="mt-8 max-w-4xl text-4xl font-semibold leading-[0.98] tracking-[-0.05em] text-[var(--ink-1)] sm:text-5xl md:text-7xl"
                 >
-                  Smart Business für Unternehmen, die mit KI und Automatisierung Zeit und Kosten sparen wollen.
+                  Smart Business für Unternehmen, die mit KI und Automatisierung spürbar Zeit und Kosten sparen wollen.
                 </motion.h1>
 
                 <motion.p
@@ -205,10 +205,10 @@ export default function HomePage() {
                   transition={{ delay: 0.16, duration: 0.7, ease: "easeOut" }}
                   className="mt-7 max-w-2xl text-base leading-7 text-[var(--muted)] sm:text-lg sm:leading-8 md:text-xl"
                 >
-                  Ich helfe Unternehmen dabei, KI sinnvoll einzusetzen, Prozesse zu
-                  automatisieren und individuelle KI-Agenten für nahezu jeden Bereich zu
-                  entwickeln. SEO und Google Ads unterstützen dabei als Ergänzung, um
-                  mehr Sichtbarkeit und qualifizierte Anfragen zu erreichen.
+                  Ich helfe Unternehmen dabei, KI sinnvoll einzusetzen, Prozesse zu automatisieren
+                  und individuelle KI-Agenten für nahezu jeden Bereich zu entwickeln. SEO und
+                  Google Ads ergänzen das Setup dort, wo mehr Sichtbarkeit und qualifizierte
+                  Anfragen aufgebaut werden sollen.
                 </motion.p>
 
                 <motion.div
@@ -306,8 +306,8 @@ export default function HomePage() {
                         Fokus
                       </div>
                       <div className="mt-3 text-sm leading-6 text-white/78">
-                        Weniger Reibung im Alltag, schnellere Abläufe und ein Setup, das
-                        spürbar entlastet.
+                        Weniger Reibung im Alltag, schnellere Abläufe und ein Setup,
+                        das echte Entlastung schafft.
                       </div>
                     </div>
                   </div>
@@ -352,7 +352,7 @@ export default function HomePage() {
             <div>
               <div className="font-semibold text-[var(--ink-1)]">Mehr Planbarkeit</div>
               <p className="mt-2 leading-6 text-[var(--muted)]">
-                KI-Agenten, KI und Automationen schaffen mehr Klarheit im operativen Alltag.
+                KI-Lösungen und Automationen schaffen mehr Klarheit im operativen Alltag.
               </p>
             </div>
             <div>
@@ -379,9 +379,9 @@ export default function HomePage() {
               Drei Hebel, die dein Unternehmen smarter aufstellen
             </h2>
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-              Ich kombiniere operative Optimierung mit digitaler Sichtbarkeit. Das Ziel
-              ist nicht einfach nur ein modernes Auftreten, sondern ein smartes System,
-              das mit KI, KI-Agenten und Automatisierung im Alltag funktioniert und Wachstum unterstützt.
+              Ich kombiniere operative Optimierung mit digitaler Sichtbarkeit. Ziel ist
+              nicht einfach nur ein moderner Auftritt, sondern ein System, das mit KI,
+              Automatisierung und individuellen Agenten im Alltag funktioniert und Wachstum unterstützt.
             </p>
           </motion.div>
 
@@ -434,9 +434,9 @@ export default function HomePage() {
                 Sichtbarkeit wird wertvoll, wenn die internen Grundlagen stimmen.
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-8 text-white/72">
-                Wenn KI, Prozesse und Automatisierung sinnvoll aufgebaut sind, lassen sich
-                SEO und Google Ads viel gezielter einsetzen. So wird Sichtbarkeit zu einem
-                Hebel, der auf einem starken Fundament aufsetzt.
+                Wenn KI, Prozesse und Automatisierung sauber aufgebaut sind, lassen sich
+                SEO und Google Ads deutlich gezielter einsetzen. So wird Sichtbarkeit zu
+                einem Hebel, der auf einem starken Fundament aufsetzt.
               </p>
             </motion.div>
 
@@ -472,7 +472,7 @@ export default function HomePage() {
                 <p className="mt-4 text-sm leading-7 text-white/72">
                   Deine Website soll nicht nur gut aussehen. Sie soll Informationen klar
                   transportieren, Prozesse unterstützen, KI-Lösungen anschlussfähig
-                  machen und Besucher in qualifizierte Kontaktanfragen führen.
+                  machen und Besucher in qualifizierte Anfragen überführen.
                 </p>
               </motion.div>
             </div>
@@ -491,7 +491,7 @@ export default function HomePage() {
               <p className="mt-6 text-lg leading-8 text-[var(--muted)]">
                 Ich arbeite nicht nach dem Prinzip "ein bisschen von allem", sondern mit
                 klarer Priorisierung. Erst kommen KI, Automatisierung und smarte Prozesse,
-                einschließlich individueller Agentenlösungen, dann die passenden Wachstumshebel nach außen.
+                inklusive individueller Agentenlösungen. Danach folgen die passenden Wachstumshebel nach außen.
               </p>
             </motion.div>
 
@@ -542,8 +542,8 @@ export default function HomePage() {
                 </h2>
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)]">
                   Ich verbinde operative Perspektive mit digitalem Denken. Das bedeutet:
-                  weniger leere Buzzwords, mehr Klarheit, mehr Umsetzbarkeit und mehr Fokus
-                  auf messbare Verbesserung durch smarte Business-Systeme.
+                  weniger leere Buzzwords, mehr Klarheit, mehr Umsetzbarkeit und ein klarer
+                  Fokus auf messbare Verbesserung.
                 </p>
               </div>
 
@@ -579,7 +579,7 @@ export default function HomePage() {
             </h2>
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
               Damit Google die Themen sauber einordnen kann, sind die wichtigsten
-              Leistungen und Suchintentionen auf eigene Seiten verteilt. Das verbessert
+              Leistungen und Suchintentionen auf eigene Seiten verteilt. Das stärkt
               interne Verlinkung, Keyword-Klarheit und thematische Tiefe.
             </p>
           </motion.div>
@@ -618,9 +618,9 @@ export default function HomePage() {
                 Beispiel-Szenarien für reale Unternehmensprobleme
               </h2>
               <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-                Cases helfen nicht nur bei Vertrauen und Conversion, sondern auch bei SEO.
+                Cases stärken nicht nur Vertrauen und Conversion, sondern auch SEO.
                 Sie zeigen Google und Besuchern, wie KI, Automatisierung und Sichtbarkeit
-                konkret zusammenspielen können.
+                in realen Szenarien zusammenspielen.
               </p>
             </motion.div>
 
@@ -692,7 +692,7 @@ export default function HomePage() {
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-white/72">
                   In einem unverbindlichen Gespräch schauen wir auf Prozesse,
-                  KI-Potenziale, Automatisierung und konkrete Optimierungspotenziale.
+                  KI-Potenziale, Automatisierung und konkrete Optimierungschancen.
                   Klar, praxisnah und ohne Verkaufsdruck.
                 </p>
               </div>

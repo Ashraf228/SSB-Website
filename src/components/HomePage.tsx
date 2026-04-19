@@ -152,11 +152,11 @@ export default function HomePage() {
             >
               <div className="flex items-center gap-3">
                 <Image
-                  src="/logo-black.png"
+                  src="/logo-mark.png"
                   alt="Soule Smart Business"
                   width={64}
                   height={64}
-                  className="h-14 w-14 rounded-full object-cover md:h-16 md:w-16"
+                  className="h-14 w-14 object-contain md:h-16 md:w-16"
                 />
                 <div>
                   <div className="text-sm font-semibold tracking-[0.2em] text-[var(--ink-2)] uppercase">

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import ContactModal from "./ContactModal";
 import Footer from "./Footer";
+import StickyCTA from "./StickyCTA";
 
 const servicePillars = [
   {
@@ -143,6 +144,10 @@ const casePages = [
 
 export default function HomePage() {
   const [open, setOpen] = useState(false);
+  const scrollToAgentTest = () => {
+    document.getElementById("agent-test")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   const revealUp = {
     initial: { opacity: 0, y: 24 },
     whileInView: { opacity: 1, y: 0 },
@@ -799,6 +804,7 @@ export default function HomePage() {
       </main>
 
       <ContactModal open={open} onClose={() => setOpen(false)} />
+      <StickyCTA onTest={scrollToAgentTest} onBook={() => setOpen(true)} isModalOpen={open} />
     </>
   );
 }

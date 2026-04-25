@@ -47,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const widgetLoaderSrc =
-    process.env.NEXT_PUBLIC_CHAT_WIDGET_SRC || "http://localhost:8080/loader.js";
+    process.env.NEXT_PUBLIC_CHAT_WIDGET_SRC || "https://app.soulesmartbusiness.com/loader.js";
   const widgetSiteKey =
     process.env.NEXT_PUBLIC_CHAT_WIDGET_SITE_KEY || "Kunde 1";
 

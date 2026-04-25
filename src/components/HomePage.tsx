@@ -147,6 +147,40 @@ export default function HomePage() {
   const scrollToAgentTest = () => {
     document.getElementById("agent-test")?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
+  const openWidgetLauncher = () => {
+    const widgetHost = document.getElementById("ssb-chat-host");
+    const widgetButton = widgetHost?.shadowRoot?.querySelector("button");
+
+    if (widgetButton instanceof HTMLButtonElement) {
+      widgetButton.click();
+      return true;
+    }
+
+    return false;
+  };
+
+  const handleAgentTest = async () => {
+    if (openWidgetLauncher()) return;
+
+    const widgetSdk = (
+      window as Window & {
+        AIChatbotWidgetSDK?: { initHostedWidget?: () => Promise<unknown> | unknown };
+      }
+    ).AIChatbotWidgetSDK;
+
+    try {
+      await widgetSdk?.initHostedWidget?.();
+    } catch {
+      // Fall back to scrolling if the widget has not loaded yet.
+    }
+
+    for (let attempt = 0; attempt < 8; attempt += 1) {
+      await new Promise((resolve) => window.setTimeout(resolve, 250));
+      if (openWidgetLauncher()) return;
+    }
+
+    scrollToAgentTest();
+  };
 
   const revealUp = {
     initial: { opacity: 0, y: 24 },
@@ -245,6 +279,10 @@ export default function HomePage() {
                     Unverbindliche Analyse starten
                   </button>
                   <a
+                    onClick={(event) => {
+                      event.preventDefault();
+                      void handleAgentTest();
+                    }}
                     href="#agent-test"
                     className="rounded-full border border-[var(--line-strong)] bg-white/70 px-7 py-4 text-base font-semibold text-[var(--ink-1)] transition hover:border-[var(--accent-2)] hover:text-[var(--accent-2)]"
                   >
@@ -804,7 +842,7 @@ export default function HomePage() {
       </main>
 
       <ContactModal open={open} onClose={() => setOpen(false)} />
-      <StickyCTA onTest={scrollToAgentTest} onBook={() => setOpen(true)} isModalOpen={open} />
+      <StickyCTA onTest={() => void handleAgentTest()} onBook={() => setOpen(true)} isModalOpen={open} />
     </>
   );
 }

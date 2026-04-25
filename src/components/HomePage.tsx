@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -144,6 +144,40 @@ const casePages = [
 
 export default function HomePage() {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    let cancelled = false;
+
+    const ensureWidgetMounted = async () => {
+      for (let attempt = 0; attempt < 10 && !cancelled; attempt += 1) {
+        const widgetHost = document.getElementById("ssb-chat-host");
+        if (widgetHost) return;
+
+        const loaderScript = document.getElementById("ssb-chat-widget");
+        const loaderSdk = (
+          window as Window & {
+            AIChatbotWidgetSDK?: {
+              initHostedWidget?: (scriptEl?: Element | null) => Promise<unknown> | unknown;
+            };
+          }
+        ).AIChatbotWidgetSDK;
+
+        try {
+          await loaderSdk?.initHostedWidget?.(loaderScript);
+        } catch {
+          // Retry below if the script is still booting.
+        }
+
+        await new Promise((resolve) => window.setTimeout(resolve, 500));
+      }
+    };
+
+    void ensureWidgetMounted();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   const scrollToAgentTest = () => {
     document.getElementById("agent-test")?.scrollIntoView({ behavior: "smooth", block: "start" });
   };

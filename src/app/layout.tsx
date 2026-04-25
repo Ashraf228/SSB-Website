@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -45,9 +46,24 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const widgetLoaderSrc =
+    process.env.NEXT_PUBLIC_CHAT_WIDGET_SRC || "http://localhost:8080/loader.js";
+  const widgetSiteKey =
+    process.env.NEXT_PUBLIC_CHAT_WIDGET_SITE_KEY || "Kunde 1";
+
   return (
     <html lang="de">
-      <body>{children}</body>
+      <body>
+        {widgetLoaderSrc && widgetSiteKey ? (
+          <Script
+            id="ssb-chat-widget"
+            src={widgetLoaderSrc}
+            data-site-key={widgetSiteKey}
+            strategy="afterInteractive"
+          />
+        ) : null}
+        {children}
+      </body>
     </html>
   );
 }

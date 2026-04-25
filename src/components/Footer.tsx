@@ -1,38 +1,56 @@
 import Link from "next/link";
+import { contactDetails } from "@/lib/site-content";
+
+const footerLinks = [
+  { href: "/leistungen", label: "Leistungen" },
+  { href: "/prozess", label: "Prozess" },
+  { href: "/ueber-uns", label: "Über uns" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/kontakt", label: "Kontakt" },
+  { href: "/impressum", label: "Impressum" },
+  { href: "/datenschutz", label: "Datenschutz" },
+];
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[var(--line)] bg-[var(--surface-0)] text-[var(--ink-2)]">
-      <div className="max-w-6xl mx-auto px-6 py-10">
-        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <div>
-            <div className="font-semibold text-[var(--ink-1)]">Soule Smart Business</div>
-            <div className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">
-              Smart Business für Unternehmen: Prozesse optimieren, Zeit und Kosten
-              sparen sowie Sichtbarkeit durch SEO und Google Ads aufbauen.
-            </div>
-            <div className="mt-3 text-sm leading-6 text-[var(--muted)]">
-              Ashraf Soule • Schulstrasse 36 • 65549 Limburg
-              <br />
-              Tel.: +49 155 11410215 • E-Mail: soulesmartbusiness@gmail.com
-            </div>
+    <footer className="mt-24 border-t border-white/10 bg-[#0B1220] text-white">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-14 md:grid-cols-[1.1fr_0.9fr] md:px-10">
+        <div>
+          <div className="text-sm font-semibold uppercase tracking-[0.22em] text-white/45">
+            Soulé Smart Business
           </div>
+          <h2 className="mt-4 text-2xl font-semibold tracking-[-0.03em]">
+            Digitale Struktur, KI und Websites für Unternehmen mit Anspruch.
+          </h2>
+          <p className="mt-4 max-w-xl text-sm leading-7 text-white/70">
+            Klare digitale Systeme, moderne Auftritte und smarte Abläufe, die nicht nur gut
+            aussehen, sondern im Alltag tatsächlich entlasten.
+          </p>
 
-          <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-            <Link className="transition hover:text-[var(--ink-1)]" href="/impressum">
-              Impressum
-            </Link>
-            <Link className="transition hover:text-[var(--ink-1)]" href="/datenschutz">
-              Datenschutz
-            </Link>
-          </nav>
+          <div className="mt-6 text-sm leading-7 text-white/68">
+            {contactDetails.address.map((line) => (
+              <div key={line}>{line}</div>
+            ))}
+            <div className="mt-3">Tel.: {contactDetails.phone}</div>
+            <div>E-Mail: {contactDetails.email}</div>
+          </div>
         </div>
 
-        <div className="mt-8 h-px bg-[var(--line)]" />
-
-        <div className="mt-6 text-xs text-[var(--muted)]">
-          © {new Date().getFullYear()} Soule Smart Business
+        <div className="grid gap-4 sm:grid-cols-2">
+          {footerLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/80 transition hover:border-white/18 hover:bg-white/8 hover:text-white"
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
+      </div>
+
+      <div className="border-t border-white/10 px-6 py-5 text-center text-xs text-white/45 md:px-10">
+        © {new Date().getFullYear()} Soulé Smart Business
       </div>
     </footer>
   );

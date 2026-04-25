@@ -5,15 +5,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: `${baseUrl}/`, lastModified: new Date() },
-    { url: `${baseUrl}/ki-agenten`, lastModified: new Date() },
-    { url: `${baseUrl}/ki-agenten-handwerk`, lastModified: new Date() },
-    { url: `${baseUrl}/automatisierung`, lastModified: new Date() },
-    { url: `${baseUrl}/automatisierung-dienstleister`, lastModified: new Date() },
-    { url: `${baseUrl}/seo-google-ads`, lastModified: new Date() },
-    { url: `${baseUrl}/seo-google-ads-limburg`, lastModified: new Date() },
-    { url: `${baseUrl}/case-ki-agent-dienstleister`, lastModified: new Date() },
-    { url: `${baseUrl}/case-automatisierung-regionaler-betrieb`, lastModified: new Date() },
-    { url: `${baseUrl}/website`, lastModified: new Date() },
+    { url: `${baseUrl}/leistungen`, lastModified: new Date() },
+    { url: `${baseUrl}/leistungen/websites`, lastModified: new Date() },
+    { url: `${baseUrl}/leistungen/ki-automation`, lastModified: new Date() },
+    { url: `${baseUrl}/leistungen/ki-chatbot`, lastModified: new Date() },
+    { url: `${baseUrl}/prozess`, lastModified: new Date() },
+    { url: `${baseUrl}/ueber-uns`, lastModified: new Date() },
+    { url: `${baseUrl}/faq`, lastModified: new Date() },
+    { url: `${baseUrl}/kontakt`, lastModified: new Date() },
     { url: `${baseUrl}/impressum`, lastModified: new Date() },
     { url: `${baseUrl}/datenschutz`, lastModified: new Date() },
   ];

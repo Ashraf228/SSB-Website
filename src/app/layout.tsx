@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import SiteShell from "@/components/SiteShell";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://soulesmartbusiness.com"),
@@ -45,23 +46,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const widgetLoaderSrc =
-    process.env.NEXT_PUBLIC_CHAT_WIDGET_SRC || "https://widget.soulesmartbusiness.com/loader.js";
-  const widgetSiteKey =
-    process.env.NEXT_PUBLIC_CHAT_WIDGET_SITE_KEY || "Kunde 1";
-
   return (
     <html lang="de">
       <body>
-        {widgetLoaderSrc && widgetSiteKey ? (
-          <script
-            id="ssb-chat-widget"
-            src={widgetLoaderSrc}
-            data-site-key={widgetSiteKey}
-            defer
-          />
-        ) : null}
-        {children}
+        <SiteShell>{children}</SiteShell>
       </body>
     </html>
   );

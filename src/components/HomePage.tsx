@@ -59,7 +59,22 @@ const highlights = [
   "KI und Automatisierung mit Praxisbezug",
   "Individuelle KI-Agenten für nahezu jeden Bereich",
   "Fokus auf Zeitersparnis und Kostenkontrolle",
-  "SEO und Google Ads als Wachstumsergänzung",
+  "Agent direkt auf der Website testbar",
+];
+
+const widgetUseCases = [
+  {
+    title: "Dienstleistungen direkt verstehen",
+    text: "Besucher können im Chat sofort nach KI-Agenten, Automatisierung, SEO oder Websites fragen und bekommen ohne Umwege eine klare Orientierung.",
+  },
+  {
+    title: "Agent live testen",
+    text: "Der Widget-Agent zeigt direkt auf deiner Website, wie ein smarter Erstkontakt für Anfragen, Rückfragen und Vorqualifizierung funktionieren kann.",
+  },
+  {
+    title: "Anwendungsfälle simulieren",
+    text: "Kunden können echte Fragen stellen und erleben, wie ein Agent Informationen strukturiert, Antworten vorbereitet und Gespräche effizienter macht.",
+  },
 ];
 
 const faqItems = [
@@ -208,7 +223,8 @@ export default function HomePage() {
                   Ich helfe Unternehmen dabei, KI sinnvoll einzusetzen, Prozesse zu automatisieren
                   und individuelle KI-Agenten für nahezu jeden Bereich zu entwickeln. SEO und
                   Google Ads ergänzen das Setup dort, wo mehr Sichtbarkeit und qualifizierte
-                  Anfragen aufgebaut werden sollen.
+                  Anfragen aufgebaut werden sollen. Besucher können den Agenten direkt auf
+                  der Website testen.
                 </motion.p>
 
                 <motion.div
@@ -224,10 +240,10 @@ export default function HomePage() {
                     Unverbindliche Analyse starten
                   </button>
                   <a
-                    href="#leistungen"
+                    href="#agent-test"
                     className="rounded-full border border-[var(--line-strong)] bg-white/70 px-7 py-4 text-base font-semibold text-[var(--ink-1)] transition hover:border-[var(--accent-2)] hover:text-[var(--accent-2)]"
                   >
-                    Leistungen ansehen
+                    Agent live testen
                   </a>
                 </motion.div>
 
@@ -370,18 +386,85 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section id="agent-test" className="mx-auto max-w-7xl px-6 py-24 md:px-10">
+          <div className="grid gap-8 rounded-[2.2rem] border border-[var(--line)] bg-white p-8 shadow-[0_22px_70px_rgba(15,23,42,0.08)] md:grid-cols-[0.95fr_1.05fr] md:p-10">
+            <motion.div {...revealUp}>
+              <div className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent-2)]">
+                Agent testen
+              </div>
+              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-[var(--ink-1)] md:text-5xl">
+                Kunden sollen nicht nur lesen, sondern den Agenten direkt erleben.
+              </h2>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)]">
+                Unten rechts auf der Website können Besucher den Chat direkt öffnen und
+                Fragen zu deinen Leistungen stellen. So wird sofort sichtbar, wie ein
+                KI-Agent Anfragen beantwortet, Informationen bereitstellt und einen
+                smarten Erstkontakt für Unternehmen abbildet.
+              </p>
+
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href="#leistungen"
+                  className="rounded-full bg-[var(--ink-1)] px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-[var(--accent-2)]"
+                >
+                  Dienstleistungen ansehen
+                </a>
+                <button
+                  onClick={() => setOpen(true)}
+                  className="rounded-full border border-[var(--line-strong)] px-6 py-3.5 text-sm font-semibold text-[var(--ink-1)] transition hover:border-[var(--accent-2)] hover:text-[var(--accent-2)]"
+                >
+                  Individuellen Agenten anfragen
+                </button>
+              </div>
+            </motion.div>
+
+            <div className="grid gap-4">
+              {widgetUseCases.map((item, index) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.25 }}
+                  transition={{ duration: 0.4, delay: index * 0.06, ease: "easeOut" }}
+                  className="rounded-[1.6rem] border border-[var(--line)] bg-[var(--surface-1)] p-6"
+                >
+                  <div className="text-lg font-semibold text-[var(--ink-1)]">{item.title}</div>
+                  <p className="mt-3 text-base leading-7 text-[var(--muted)]">{item.text}</p>
+                </motion.div>
+              ))}
+
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.4, delay: 0.18, ease: "easeOut" }}
+                className="rounded-[1.6rem] border border-[var(--line)] bg-[linear-gradient(135deg,#f8fbff_0%,#eef5ff_100%)] p-6"
+              >
+                <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--accent-2)]">
+                  So testet man den Agenten
+                </div>
+                <div className="mt-4 space-y-3 text-sm leading-7 text-[var(--ink-2)]">
+                  <div>1. Chat unten rechts öffnen.</div>
+                  <div>2. Nach Leistungen, Preisen, Einsatzfeldern oder Beispielen fragen.</div>
+                  <div>3. Erleben, wie der Agent Orientierung gibt und Anfragen vorbereitet.</div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
         <section id="leistungen" className="mx-auto max-w-7xl px-6 py-24 md:px-10">
           <motion.div className="max-w-2xl" {...revealUp}>
             <div className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent-2)]">
               Leistungen
             </div>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-[var(--ink-1)] md:text-5xl">
-              Drei Hebel, die dein Unternehmen smarter aufstellen
+              Dienstleistungen, mit denen Unternehmen smarter arbeiten
             </h2>
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-              Ich kombiniere operative Optimierung mit digitaler Sichtbarkeit. Ziel ist
-              nicht einfach nur ein moderner Auftritt, sondern ein System, das mit KI,
-              Automatisierung und individuellen Agenten im Alltag funktioniert und Wachstum unterstützt.
+              Besucher sollen auf einen Blick verstehen, wobei ich konkret unterstütze:
+              KI-Agenten, Automatisierung, digitale Prozesse und bei Bedarf mehr
+              Sichtbarkeit über SEO und Google Ads.
             </p>
           </motion.div>
 

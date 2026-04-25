@@ -50,6 +50,11 @@ export default function RootLayout({
     <html lang="de">
       <body>
         <SiteShell>{children}</SiteShell>
+        <script
+          src="https://widget.soulesmartbusiness.com/loader.js"
+          data-site-key="Kunde 1"
+          defer
+        />
       </body>
     </html>
   );

@@ -15,6 +15,14 @@ export default function HomePage() {
       <section className="relative isolate px-6 pb-20 pt-16 md:px-10 md:pb-28 md:pt-20">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(30,51,82,0.16),_transparent_34%),radial-gradient(circle_at_85%_12%,_rgba(11,18,32,0.08),_transparent_26%),linear-gradient(180deg,_#f8fafc_0%,_#f3f4f6_56%,_#ffffff_100%)]" />
         <div className="pointer-events-none absolute inset-0 opacity-35 [background-image:linear-gradient(rgba(255,255,255,0.65)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.65)_1px,transparent_1px)] [background-size:76px_76px] [mask-image:linear-gradient(180deg,rgba(0,0,0,0.5),transparent_80%)]" />
+        <div className="pointer-events-none absolute inset-y-0 right-[-18%] flex items-center justify-center md:right-[-10%]">
+          <img
+            src="/logo-mark.png"
+            alt=""
+            aria-hidden="true"
+            className="h-[22rem] w-[22rem] object-contain opacity-[0.08] blur-3xl sm:h-[28rem] sm:w-[28rem] md:h-[36rem] md:w-[36rem] lg:h-[46rem] lg:w-[46rem]"
+          />
+        </div>
 
         <div className="relative mx-auto grid max-w-7xl gap-12 md:grid-cols-[1.05fr_0.95fr] md:items-end">
           <div className="max-w-3xl">

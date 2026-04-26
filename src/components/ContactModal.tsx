@@ -35,12 +35,23 @@ export default function ContactModal({
         body: JSON.stringify(form),
       });
 
-      if (!res.ok) throw new Error("request failed");
+      const data = await res.json().catch(() => null);
+
+      if (!res.ok) {
+        throw new Error(
+          data?.error ||
+            "Senden fehlgeschlagen. Bitte versuchen Sie es erneut oder rufen Sie an: +49 155 11410215",
+        );
+      }
 
       setOk("Danke! Ihre Anfrage wurde gesendet.");
       setForm({ name: "", email: "", phone: "", message: "", company: "", hp: "" });
-    } catch {
-      setOk("Senden fehlgeschlagen. Bitte versuchen Sie es erneut oder rufen Sie an: +49 155 11410215");
+    } catch (error) {
+      setOk(
+        error instanceof Error
+          ? error.message
+          : "Senden fehlgeschlagen. Bitte versuchen Sie es erneut oder rufen Sie an: +49 155 11410215",
+      );
     } finally {
       setLoading(false);
     }

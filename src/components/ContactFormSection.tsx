@@ -27,12 +27,23 @@ export default function ContactFormSection() {
         body: JSON.stringify(form),
       });
 
-      if (!res.ok) throw new Error("request failed");
+      const data = await res.json().catch(() => null);
+
+      if (!res.ok) {
+        throw new Error(
+          data?.error ||
+            "Senden fehlgeschlagen. Bitte versuchen Sie es erneut oder melden Sie sich telefonisch.",
+        );
+      }
 
       setOk("Danke! Ihre Anfrage wurde gesendet.");
       setForm({ name: "", email: "", phone: "", company: "", message: "", hp: "" });
-    } catch {
-      setOk("Senden fehlgeschlagen. Bitte versuchen Sie es erneut oder melden Sie sich telefonisch.");
+    } catch (error) {
+      setOk(
+        error instanceof Error
+          ? error.message
+          : "Senden fehlgeschlagen. Bitte versuchen Sie es erneut oder melden Sie sich telefonisch.",
+      );
     } finally {
       setLoading(false);
     }

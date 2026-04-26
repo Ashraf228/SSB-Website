@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import SiteShell from "@/components/SiteShell";
 
@@ -50,10 +51,17 @@ export default function RootLayout({
     <html lang="de">
       <body>
         <SiteShell>{children}</SiteShell>
-        <script
+        <Script id="ssb-widget-process-polyfill" strategy="beforeInteractive">
+          {`
+            window.global = window.global || window;
+            window.process = window.process || { env: { NODE_ENV: "production" } };
+          `}
+        </Script>
+        <Script
+          id="ssb-widget-loader"
           src="https://widget.soulesmartbusiness.com/loader.js"
           data-site-key="Kunde 1"
-          defer
+          strategy="afterInteractive"
         />
       </body>
     </html>

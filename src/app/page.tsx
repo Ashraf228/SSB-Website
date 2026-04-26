@@ -7,7 +7,7 @@ export default function Page() {
     name: "Soule Smart Business",
     url: "https://soulesmartbusiness.com",
     telephone: "+4915511410215",
-    email: "soulesmartbusiness@gmail.com",
+    email: "hello@soulesmartbusiness.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Schulstrasse 36",

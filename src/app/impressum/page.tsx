@@ -40,7 +40,7 @@ export default function ImpressumPage() {
             <div className="mt-2">
               Telefon: +49 155 11410215
               <br />
-              E-Mail: soulesmartbusiness@gmail.com
+              E-Mail: hello@soulesmartbusiness.com
             </div>
           </div>
 

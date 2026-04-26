@@ -131,6 +131,6 @@ export const founderParagraphs = [
 
 export const contactDetails = {
   phone: "+49 155 11410215",
-  email: "soulesmartbusiness@gmail.com",
+  email: "hello@soulesmartbusiness.com",
   address: ["Ashraf Soulé", "Soulé Smart Business", "Schulstrasse 36", "65549 Limburg"],
 };

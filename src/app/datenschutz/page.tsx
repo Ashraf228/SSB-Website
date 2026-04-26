@@ -21,7 +21,7 @@ export default function DatenschutzPage() {
               <br />
               Schulstrasse 36, 65549 Limburg, Deutschland
               <br />
-              E-Mail: soulesmartbusiness@gmail.com
+              E-Mail: hello@soulesmartbusiness.com
               <br />
               Telefon: +49 155 11410215
             </p>

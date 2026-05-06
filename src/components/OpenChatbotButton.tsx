@@ -1,7 +1,7 @@
 "use client";
 
 const WIDGET_SRC = "https://widget.soulesmartbusiness.com/loader.js";
-const WIDGET_SITE_KEY = "Kunde 1";
+const WIDGET_SITE_KEY = "kunde-1";
 const WIDGET_HOST_ID = "ssb-chat-host";
 
 type OpenChatbotButtonProps = {

@@ -60,7 +60,7 @@ export default function RootLayout({
         <Script
           id="ssb-widget-loader"
           src="https://widget.soulesmartbusiness.com/loader.js"
-          data-site-key="Kunde 1"
+          data-site-key="kunde-1"
           strategy="afterInteractive"
         />
       </body>

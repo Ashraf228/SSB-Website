@@ -51,6 +51,14 @@ export default function RootLayout({
       <body>
         <SiteShell>{children}</SiteShell>
         <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.global = window.global || window;
+              window.process = window.process || { env: { NODE_ENV: "production" } };
+            `,
+          }}
+        />
+        <script
           src="https://widget.soulesmartbusiness.com/loader.js"
           data-site-key="soulesmartbusiness"
           async

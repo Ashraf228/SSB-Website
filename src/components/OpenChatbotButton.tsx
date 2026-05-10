@@ -1,7 +1,7 @@
 "use client";
 
 const WIDGET_SRC = "https://widget.soulesmartbusiness.com/loader.js";
-const WIDGET_SITE_KEY = "kunde-1";
+const WIDGET_SITE_KEY = "soulesmartbusiness";
 const WIDGET_HOST_ID = "ssb-chat-host";
 
 type OpenChatbotButtonProps = {
@@ -31,7 +31,7 @@ function ensureWidgetScript() {
 
   const script = document.createElement("script");
   script.src = WIDGET_SRC;
-  script.defer = true;
+  script.async = true;
   script.dataset.siteKey = WIDGET_SITE_KEY;
   document.body.appendChild(script);
   return script;

@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { buildPageMetadata } from "@/lib/seo";
+
 export const metadata: Metadata = {
-  title: "Impressum",
+  ...buildPageMetadata({
+    title: "Impressum",
+    description:
+      "Impressum von Soulé Smart Business mit Anbieterkennzeichnung und Kontaktdaten.",
+    path: "/impressum",
+  }),
   robots: { index: false, follow: true },
 };
-
-import Link from "next/link";
 
 export default function ImpressumPage() {
   return (

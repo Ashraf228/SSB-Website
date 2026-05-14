@@ -1,10 +1,19 @@
+import type { Metadata } from "next";
 import HomePage from "@/components/HomePage";
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "KI-Agenten für Unternehmen",
+  description:
+    "KI-Agenten für Unternehmen: Support entlasten, Kundenanfragen automatisieren, Leads qualifizieren und Prozesse effizienter machen.",
+  path: "/",
+});
 
 export default function Page() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "Soule Smart Business",
+    name: "Soulé Smart Business",
     url: "https://soulesmartbusiness.com",
     telephone: "+4915511410215",
     email: "hello@soulesmartbusiness.com",
@@ -15,18 +24,18 @@ export default function Page() {
       addressLocality: "Limburg",
       addressCountry: "DE",
     },
-    founder: "Ashraf Soule",
+    founder: "Ashraf Soulé",
     areaServed: "DE",
     description:
-      "Smart Business für Unternehmen mit Fokus auf KI, Automatisierung und effiziente Prozesse. SEO und Google Ads dienen als Wachstumsergänzung.",
+      "Soulé Smart Business entwickelt KI-Agenten und KI-Automatisierung für Unternehmen, um Support zu entlasten, Leads zu qualifizieren und Prozesse zu beschleunigen.",
     knowsAbout: [
-      "KI im Unternehmen",
-      "Automatisierung",
-      "Prozessoptimierung",
-      "SEO",
-      "Google Ads",
-      "Websites für Unternehmen",
-      "Digitale Effizienz",
+      "KI-Agenten",
+      "KI-Support-Agenten",
+      "KI-Lead-Agenten",
+      "KI-Wissensdatenbank",
+      "KI-Prozessautomatisierung",
+      "KI im E-Commerce",
+      "Digitale Prozessentlastung",
     ],
     sameAs: [],
   };

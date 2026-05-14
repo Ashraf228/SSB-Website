@@ -3,6 +3,7 @@ import { contactDetails } from "@/lib/site-content";
 
 const footerLinks = [
   { href: "/leistungen", label: "Leistungen" },
+  { href: "/branchen", label: "Branchen" },
   { href: "/prozess", label: "Prozess" },
   { href: "/ueber-uns", label: "Über uns" },
   { href: "/faq", label: "FAQ" },
@@ -20,11 +21,11 @@ export default function Footer() {
             Soulé Smart Business
           </div>
           <h2 className="mt-4 text-2xl font-semibold tracking-[-0.03em]">
-            Digitale Struktur, KI und Websites für Unternehmen mit Anspruch.
+            KI-Agenten und Automatisierungslösungen für Unternehmen mit Anspruch.
           </h2>
           <p className="mt-4 max-w-xl text-sm leading-7 text-white/70">
-            Klare digitale Systeme, moderne Auftritte und smarte Abläufe, die nicht nur gut
-            aussehen, sondern im Alltag tatsächlich entlasten.
+            Soulé Smart Business entwickelt KI-Agenten und Automatisierungslösungen, die
+            Unternehmen Zeit, Arbeit und Kosten sparen.
           </p>
 
           <div className="mt-6 text-sm leading-7 text-white/68">

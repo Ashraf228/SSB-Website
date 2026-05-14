@@ -10,13 +10,15 @@ const nextConfig: NextConfig = {
         destination: "/leistungen/ki-automation",
         permanent: true,
       },
-      { source: "/ki-agenten", destination: "/leistungen/ki-chatbot", permanent: true },
-      { source: "/ki-agenten-handwerk", destination: "/leistungen/ki-chatbot", permanent: true },
+      { source: "/ki-agenten", destination: "/leistungen/ki-agenten", permanent: true },
+      { source: "/ki-agenten-handwerk", destination: "/leistungen/ki-agenten", permanent: true },
+      { source: "/leisten/ki-chatbot", destination: "/leistungen/ki-agenten", permanent: true },
+      { source: "/leistungen/ki-chatbot", destination: "/leistungen/ki-agenten", permanent: true },
       { source: "/seo-google-ads", destination: "/leistungen", permanent: true },
       { source: "/seo-google-ads-limburg", destination: "/leistungen", permanent: true },
       {
         source: "/case-ki-agent-dienstleister",
-        destination: "/leistungen/ki-chatbot",
+        destination: "/leistungen/ki-agenten",
         permanent: true,
       },
       {

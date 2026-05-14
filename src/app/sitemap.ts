@@ -6,9 +6,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${baseUrl}/`, lastModified: new Date() },
     { url: `${baseUrl}/leistungen`, lastModified: new Date() },
+    { url: `${baseUrl}/branchen`, lastModified: new Date() },
     { url: `${baseUrl}/leistungen/websites`, lastModified: new Date() },
     { url: `${baseUrl}/leistungen/ki-automation`, lastModified: new Date() },
-    { url: `${baseUrl}/leistungen/ki-chatbot`, lastModified: new Date() },
+    { url: `${baseUrl}/leistungen/ki-agenten`, lastModified: new Date() },
     { url: `${baseUrl}/prozess`, lastModified: new Date() },
     { url: `${baseUrl}/ueber-uns`, lastModified: new Date() },
     { url: `${baseUrl}/faq`, lastModified: new Date() },

@@ -22,12 +22,28 @@ export default function CTASection({ eyebrow, title, description }: CTASectionPr
 
           <div className="flex flex-col gap-3 md:items-end">
             <OpenChatbotButton className="rounded-full bg-white px-6 py-4 text-sm font-semibold text-[var(--ink-1)] transition hover:bg-[var(--surface-1)]">
-              KI-Beratung starten
+              KI-Potenzial prüfen
             </OpenChatbotButton>
             <OpenContactButton className="rounded-full border border-white/20 px-6 py-4 text-sm font-semibold text-white transition hover:bg-white/10">
-              Gespräch anfragen
+              Kostenlose Analyse anfragen
             </OpenContactButton>
           </div>
+        </div>
+
+        <div className="mt-8 flex flex-wrap gap-3">
+          {[
+            "Unverbindliche Ersteinschätzung",
+            "Klare Grenzen und menschliche Übergabe",
+            "Praxisnah statt theoretisch",
+            "Für kleine und mittelständische Unternehmen",
+          ].map((item) => (
+            <div
+              key={item}
+              className="rounded-full border border-white/12 bg-white/6 px-4 py-2 text-xs font-medium text-white/78"
+            >
+              {item}
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -5,12 +5,12 @@ import SiteShell from "@/components/SiteShell";
 export const metadata: Metadata = {
   metadataBase: new URL("https://soulesmartbusiness.com"),
   title: {
-    default: "Soule Smart Business | KI, Automatisierung und smartes Business",
-    template: "%s | Soule Smart Business",
+    default: "KI-Agenten für Unternehmen | Soulé Smart Business",
+    template: "%s | Soulé Smart Business",
   },
   description:
-    "Smart Business für Unternehmen mit Fokus auf KI, Automatisierung und effiziente Prozesse. SEO und Google Ads unterstützen als Wachstumsergänzung.",
-  applicationName: "Soule Smart Business",
+    "Soulé Smart Business entwickelt KI-Agenten für Unternehmen und KI-Automatisierung: Support entlasten, Kundenanfragen automatisieren und Prozesse effizienter machen.",
+  applicationName: "Soulé Smart Business",
   alternates: { canonical: "https://soulesmartbusiness.com" },
   icons: {
     icon: "/icon.png",
@@ -20,18 +20,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://soulesmartbusiness.com",
-    siteName: "Soule Smart Business",
-    title: "Soule Smart Business | KI, Automatisierung und smartes Business",
+    siteName: "Soulé Smart Business",
+    title: "KI-Agenten für Unternehmen | Soulé Smart Business",
     description:
-      "Ich helfe Unternehmen, KI sinnvoll einzusetzen, Prozesse zu automatisieren und ihr Business smarter aufzustellen. SEO und Google Ads ergänzen das Wachstum.",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Soule Smart Business" }],
+      "KI-Agenten für Unternehmen, KI-Automatisierung, Support-Entlastung und strukturierte Kundenanfragen.",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Soulé Smart Business" }],
     locale: "de_DE",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Soule Smart Business | KI, Automatisierung und smartes Business",
+    title: "KI-Agenten für Unternehmen | Soulé Smart Business",
     description:
-      "KI und Automatisierung für smartes Business. SEO und Google Ads als sinnvolle Wachstumsergänzung.",
+      "KI-Agenten für Unternehmen, KI-Automatisierung und entlastete Prozesse für Support, Leads und Anfragen.",
     images: ["/og.png"],
   },
   robots: {

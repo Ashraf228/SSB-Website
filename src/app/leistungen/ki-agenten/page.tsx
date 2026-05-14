@@ -2,23 +2,23 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import CTASection from "@/components/CTASection";
-import OpenContactButton from "@/components/OpenContactButton";
+import OpenChatbotButton from "@/components/OpenChatbotButton";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "KI-Automatisierung für Unternehmen",
+  title: "KI-Agenten für Unternehmen",
   description:
-    "KI-Automatisierung für Unternehmen: Prozesse automatisieren, manuelle Zwischenschritte reduzieren und Support, Leads sowie interne Abläufe entlasten.",
-  path: "/leistungen/ki-automation",
+    "KI-Agenten für Unternehmen: Support entlasten, Kundenanfragen automatisieren, Leads qualifizieren und strukturierte Übergaben ermöglichen.",
+  path: "/leistungen/ki-agenten",
 });
 
-export default function KIAutomationPage() {
+export default function KIAgentenPage() {
   return (
     <main>
       <PageHero
-        eyebrow="KI-Automatisierung"
-        title="KI-Automatisierung für Prozesse, die täglich Zeit kosten"
-        description="KI-Automatisierung verbindet Anfrage, Wissen, Entscheidung und Übergabe so, dass wiederkehrende Prozesse nicht länger vollständig manuell laufen müssen."
+        eyebrow="KI-Agenten"
+        title="KI-Agenten für Beratung, Support und Anfrageaufnahme"
+        description="KI-Agenten beantworten Fragen, qualifizieren Anliegen, erfassen relevante Daten und übergeben Gespräche strukturiert an das richtige Team."
       />
 
       <Section>
@@ -29,14 +29,14 @@ export default function KIAutomationPage() {
                 Problem
               </div>
               <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-[var(--ink-1)]">
-                Manuelle Übergaben, doppelte Datenerfassung und wiederkehrende Kommunikation kosten täglich Zeit.
+                Kundenfragen, Leads und Supportanfragen kosten täglich Zeit.
               </h2>
               <div className="mt-8 space-y-3">
                 {[
-                  "Anfragen werden mehrfach manuell gelesen und weitergegeben.",
-                  "Informationen werden in verschiedenen Schritten erneut abgefragt.",
-                  "Kommunikation wiederholt sich in Support, Vertrieb und internen Prozessen.",
-                  "Übergaben zwischen Systemen und Teams erzeugen Reibung.",
+                  "Wiederkehrende Fragen landen manuell im Team.",
+                  "Leads kommen ohne Struktur oder Vorqualifizierung an.",
+                  "Supportanliegen werden ungefiltert weitergegeben.",
+                  "Zwischen Anfrage und Antwort entstehen unnötige Wartezeiten.",
                 ].map((item) => (
                   <div key={item} className="rounded-2xl border border-[var(--line)] bg-[var(--surface-0)] px-4 py-3 text-sm text-[var(--muted)]">
                     {item}
@@ -50,18 +50,18 @@ export default function KIAutomationPage() {
                 Lösung
               </div>
               <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em]">
-                KI-Agenten verbinden Anfrage, Wissen, Entscheidung und Übergabe.
+                Ein KI-Agent beantwortet, fragt ab, qualifiziert und übergibt sauber weiter.
               </h2>
               <p className="mt-5 text-base leading-8 text-white/74">
-                Statt isolierter Einzelschritte entstehen automatisierte Strecken, in denen ein
-                KI-Agent Informationen aufnimmt, aufbereitet und direkt an den richtigen nächsten Schritt übergibt.
+                Statt dass jeder Erstkontakt komplett manuell bearbeitet wird, übernimmt ein KI-Agent
+                den ersten Dialog, sammelt relevante Informationen und bereitet die Übergabe ans Team vor.
               </p>
               <div className="mt-8 grid gap-3">
                 {[
-                  "Weniger manuelle Zwischenschritte",
-                  "Schnellere Bearbeitung",
-                  "Klare Übergaben",
-                  "Bessere Skalierbarkeit im Alltag",
+                  "Fragen beantworten",
+                  "Daten gezielt abfragen",
+                  "Anliegen qualifizieren",
+                  "Gespräche strukturiert übergeben",
                 ].map((item) => (
                   <div key={item} className="rounded-2xl border border-white/12 bg-white/[0.06] px-4 py-3 text-sm text-white/82">
                     {item}
@@ -73,25 +73,33 @@ export default function KIAutomationPage() {
 
           <div className="mt-16">
             <div className="text-sm font-semibold uppercase tracking-[0.24em] text-[var(--accent-2)]">
-              Beispiele
+              Einsatzfelder
             </div>
-            <div className="mt-6 grid gap-5 md:grid-cols-2">
+            <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
               {[
                 {
-                  title: "Anfrage → Vorqualifizierung → Team-Übergabe",
-                  text: "Ein KI-Agent nimmt Anfragen auf, sortiert den Bedarf vor und übergibt nur die relevanten Fälle weiter.",
+                  title: "Support",
+                  text: "Ein KI-Agent beantwortet wiederkehrende Anfragen und entlastet das Team bei Standardfällen.",
                 },
                 {
-                  title: "Supportfall → Klassifizierung → Ticket-Vorbereitung",
-                  text: "Supportfälle werden eingeordnet und mit den wichtigsten Informationen für das Team vorbereitet.",
+                  title: "Lead-Qualifizierung",
+                  text: "Interessenten werden vorqualifiziert, bevor sie in Vertrieb oder Beratung übergehen.",
                 },
                 {
-                  title: "Kunde → Datenabfrage → E-Mail/CRM-Übergabe",
-                  text: "Relevante Daten werden direkt im Gespräch erfasst und für Folgeprozesse vorbereitet.",
+                  title: "Terminvorbereitung",
+                  text: "Terminwünsche, Kontaktdaten und Kontext werden vor dem Gespräch bereits sauber erfasst.",
                 },
                 {
-                  title: "Produktfrage → Empfehlung → Kaufentscheidung unterstützen",
-                  text: "Ein KI-Agent kann Orientierung geben, passende Optionen zeigen und die Kaufentscheidung vorbereiten.",
+                  title: "FAQ",
+                  text: "Häufige Fragen lassen sich rund um die Uhr beantworten, ohne dass Mitarbeiter eingreifen müssen.",
+                },
+                {
+                  title: "Produktberatung",
+                  text: "Ein Agent kann Orientierung geben, passende Informationen liefern und Kaufentscheidungen vorbereiten.",
+                },
+                {
+                  title: "Interne Wissensabfrage",
+                  text: "Mitarbeiter greifen schneller auf relevantes Wissen zu, statt es manuell zusammensuchen zu müssen.",
                 },
               ].map((item) => (
                 <div
@@ -112,10 +120,10 @@ export default function KIAutomationPage() {
               </div>
               <div className="mt-8 space-y-3">
                 {[
-                  "Weniger manuelle Zwischenschritte",
-                  "Klare Prozesse",
-                  "Bessere Reaktionsgeschwindigkeit",
-                  "Skalierbare Abläufe",
+                  "Weniger manuelle Antworten",
+                  "Schnellere Reaktionszeiten",
+                  "Bessere Datenqualität",
+                  "Weniger verlorene Anfragen",
                 ].map((item) => (
                   <div key={item} className="rounded-2xl border border-[var(--line)] bg-[var(--surface-0)] px-4 py-3 text-sm text-[var(--ink-2)]">
                     {item}
@@ -129,21 +137,21 @@ export default function KIAutomationPage() {
                 Nächster Schritt
               </div>
               <p className="mt-5 text-base leading-8 text-[var(--muted)]">
-                Wenn du wissen willst, welche wiederkehrenden Abläufe sich in deinem Unternehmen
-                zuerst automatisieren lassen, ist die Potenzialprüfung der richtige Einstieg.
+                Wenn du sehen willst, wie ein KI-Agent Anfragen, Support oder Beratungsprozesse
+                auf deiner Website übernehmen kann, ist der direkte Test der beste Einstieg.
               </p>
-              <OpenContactButton className="mt-8 rounded-full bg-[var(--ink-1)] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[var(--accent-2)]">
-                Automatisierungspotenzial prüfen
-              </OpenContactButton>
+              <OpenChatbotButton className="mt-8 rounded-full bg-[var(--ink-1)] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[var(--accent-2)]">
+                KI-Agent testen
+              </OpenChatbotButton>
             </div>
           </div>
         </div>
       </Section>
 
       <CTASection
-        eyebrow="KI-Automatisierung"
-        title="Automatisierung wirkt dann, wenn Anfrage, Wissen und Übergabe als System zusammenarbeiten."
-        description="Darum wird KI-Automatisierung nicht als Einzellösung gedacht, sondern als operativer Ablauf mit klaren Übergängen und echtem Nutzen im Alltag."
+        eyebrow="KI-Agent"
+        title="Ein KI-Agent wird zum ersten Ansprechpartner und entlastet Ihr Team schon vor dem eigentlichen Gespräch."
+        description="Support, Lead-Qualifizierung, FAQ und strukturierte Anfrageaufnahme lassen sich dadurch konsistenter und schneller abbilden."
       />
     </main>
   );

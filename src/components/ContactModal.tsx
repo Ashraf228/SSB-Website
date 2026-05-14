@@ -3,6 +3,15 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+const solutionOptions = [
+  "KI-Support-Agent",
+  "KI-Lead-Agent",
+  "KI-Wissensdatenbank",
+  "KI-Prozessautomatisierung",
+  "KI-E-Commerce-Agent",
+  "Noch unklar",
+];
+
 export default function ContactModal({
   open,
   onClose,
@@ -16,16 +25,18 @@ export default function ContactModal({
     name: "",
     email: "",
     phone: "",
-    message: "",
     company: "",
-    hp: "", // honeypot
+    industry: "",
+    solution: "Noch unklar",
+    message: "",
+    hp: "",
   });
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     setOk(null);
 
-    if (form.hp) return; // spam
+    if (form.hp) return;
 
     setLoading(true);
     try {
@@ -44,8 +55,19 @@ export default function ContactModal({
         );
       }
 
-      setOk("Danke! Ihre Anfrage wurde gesendet.");
-      setForm({ name: "", email: "", phone: "", message: "", company: "", hp: "" });
+      setOk(
+        "Ihre Anfrage wurde gesendet. Wir prüfen den Anwendungsfall und melden uns mit einer Einschätzung.",
+      );
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        industry: "",
+        solution: "Noch unklar",
+        message: "",
+        hp: "",
+      });
     } catch (error) {
       setOk(
         error instanceof Error
@@ -66,34 +88,38 @@ export default function ContactModal({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          {/* backdrop */}
-          <div
-            className="absolute inset-0 bg-black/60"
-            onClick={onClose}
-          />
+          <div className="absolute inset-0 bg-black/60" onClick={onClose} />
 
-          {/* modal */}
           <motion.div
             initial={{ opacity: 0, y: 16, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.98 }}
             transition={{ duration: 0.2 }}
-            className="relative w-full max-w-xl rounded-3xl bg-white text-[#0B1220] shadow-2xl overflow-hidden"
+            className="relative max-h-[90vh] w-full max-w-2xl overflow-hidden rounded-[2rem] bg-white text-[#0B1220] shadow-2xl"
           >
-            <div className="p-7 md:p-8 border-b border-black/10 flex items-center justify-between">
+            <div className="flex items-start justify-between gap-6 border-b border-black/10 p-7 md:p-8">
               <div>
-                <div className="text-xl font-bold">Strategiegespräch anfragen</div>
-                <div className="text-sm text-gray-600 mt-1">
-                  Kurz beschreiben, wo Sie KI, Automatisierung oder smartere Prozesse im Unternehmen aufbauen möchten.
+                <div className="text-sm font-semibold uppercase tracking-[0.22em] text-[#1E3352]">
+                  Analyseanfrage
+                </div>
+                <div className="mt-3 text-2xl font-semibold tracking-[-0.03em] md:text-3xl">
+                  Kostenlose KI-Potenzialanalyse anfragen
+                </div>
+                <div className="mt-3 max-w-2xl text-sm leading-7 text-gray-600 md:text-base">
+                  Beschreiben Sie kurz, welche Aufgaben, Anfragen oder Prozesse aktuell Zeit
+                  kosten. Wir prüfen, welcher KI-Agent sinnvoll wäre.
                 </div>
               </div>
-              <button onClick={onClose} className="text-gray-500 hover:text-black">
+              <button
+                onClick={onClose}
+                className="rounded-full border border-black/10 p-2 text-gray-500 transition hover:border-black/20 hover:text-black"
+                aria-label="Modal schließen"
+              >
                 ✕
               </button>
             </div>
 
-            <form onSubmit={submit} className="p-7 md:p-8 space-y-4">
-              {/* honeypot hidden */}
+            <form onSubmit={submit} className="max-h-[calc(90vh-140px)] space-y-4 overflow-y-auto p-7 md:p-8">
               <input
                 value={form.hp}
                 onChange={(e) => setForm({ ...form, hp: e.target.value })}
@@ -102,59 +128,108 @@ export default function ContactModal({
                 autoComplete="off"
               />
 
-              <div className="grid md:grid-cols-2 gap-4">
-                <input
-                  className="w-full p-3.5 border rounded-xl"
-                  placeholder="Name*"
-                  value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  required
-                />
-                <input
-                  className="w-full p-3.5 border rounded-xl"
-                  placeholder="E-Mail*"
-                  type="email"
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-[var(--ink-2)]">Name</label>
+                  <input
+                    className="w-full rounded-2xl border border-[var(--line)] px-4 py-3.5 outline-none transition focus:border-[var(--accent-2)] focus:ring-2 focus:ring-[rgba(30,51,82,0.12)]"
+                    placeholder="Ihr Name"
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
+                    required
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-[var(--ink-2)]">Unternehmen</label>
+                  <input
+                    className="w-full rounded-2xl border border-[var(--line)] px-4 py-3.5 outline-none transition focus:border-[var(--accent-2)] focus:ring-2 focus:ring-[rgba(30,51,82,0.12)]"
+                    placeholder="Unternehmen"
+                    value={form.company}
+                    onChange={(e) => setForm({ ...form, company: e.target.value })}
+                    required
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-[var(--ink-2)]">E-Mail</label>
+                  <input
+                    className="w-full rounded-2xl border border-[var(--line)] px-4 py-3.5 outline-none transition focus:border-[var(--accent-2)] focus:ring-2 focus:ring-[rgba(30,51,82,0.12)]"
+                    placeholder="name@unternehmen.de"
+                    type="email"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    required
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-[var(--ink-2)]">Telefon optional</label>
+                  <input
+                    className="w-full rounded-2xl border border-[var(--line)] px-4 py-3.5 outline-none transition focus:border-[var(--accent-2)] focus:ring-2 focus:ring-[rgba(30,51,82,0.12)]"
+                    placeholder="Telefonnummer"
+                    value={form.phone}
+                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-[var(--ink-2)]">Branche</label>
+                  <input
+                    className="w-full rounded-2xl border border-[var(--line)] px-4 py-3.5 outline-none transition focus:border-[var(--accent-2)] focus:ring-2 focus:ring-[rgba(30,51,82,0.12)]"
+                    placeholder="z. B. Handwerk, E-Commerce, IT"
+                    value={form.industry}
+                    onChange={(e) => setForm({ ...form, industry: e.target.value })}
+                    required
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-[var(--ink-2)]">Gewünschte Lösung</label>
+                  <select
+                    className="w-full rounded-2xl border border-[var(--line)] bg-white px-4 py-3.5 outline-none transition focus:border-[var(--accent-2)] focus:ring-2 focus:ring-[rgba(30,51,82,0.12)]"
+                    value={form.solution}
+                    onChange={(e) => setForm({ ...form, solution: e.target.value })}
+                    required
+                  >
+                    {solutionOptions.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-[var(--ink-2)]">
+                  Welche Prozesse kosten aktuell viel Zeit?
+                </label>
+                <textarea
+                  className="min-h-36 w-full rounded-2xl border border-[var(--line)] px-4 py-3.5 outline-none transition focus:border-[var(--accent-2)] focus:ring-2 focus:ring-[rgba(30,51,82,0.12)]"
+                  placeholder="z. B. viele wiederkehrende Supportfragen, ungefilterte Leads, Terminabsprachen oder interne Rückfragen"
+                  rows={5}
+                  value={form.message}
+                  onChange={(e) => setForm({ ...form, message: e.target.value })}
                   required
                 />
               </div>
 
-              <div className="grid md:grid-cols-2 gap-4">
-                <input
-                  className="w-full p-3.5 border rounded-xl"
-                  placeholder="Telefon (optional)"
-                  value={form.phone}
-                  onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                />
-                <input
-                  className="w-full p-3.5 border rounded-xl"
-                  placeholder="Firma (optional)"
-                  value={form.company}
-                  onChange={(e) => setForm({ ...form, company: e.target.value })}
-                />
-              </div>
-
-              <textarea
-                className="w-full p-3.5 border rounded-xl"
-                placeholder="Worum geht es? (KI, Automatisierung, Prozesse, SEO, Google Ads, Website ...)*"
-                rows={5}
-                value={form.message}
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
-                required
-              />
-
-              <div className="text-xs text-gray-600">
+              <div className="text-xs leading-6 text-gray-600">
                 Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten zur Bearbeitung der Anfrage zu.
               </div>
 
-              {ok && <div className="text-sm text-gray-800">{ok}</div>}
+              {ok ? (
+                <div className="rounded-[1.4rem] border border-[var(--line)] bg-[var(--surface-0)] px-4 py-4 text-sm leading-7 text-[var(--ink-1)]">
+                  {ok}
+                </div>
+              ) : null}
 
               <button
                 disabled={loading}
-                className="w-full mt-2 px-6 py-3 rounded-xl bg-[#0B1220] text-white font-semibold hover:bg-[#1E3352] transition disabled:opacity-60"
+                className="mt-2 inline-flex min-h-[56px] w-full items-center justify-center rounded-full bg-[#0B1220] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#1E3352] disabled:opacity-60"
               >
-                {loading ? "Senden..." : "Analyse anfragen"}
+                {loading ? "Wird gesendet..." : "Kostenlose Analyse anfragen"}
               </button>
 
               <div className="text-center text-sm text-gray-600">

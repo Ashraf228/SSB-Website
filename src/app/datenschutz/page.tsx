@@ -1,4 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  ...buildPageMetadata({
+    title: "Datenschutz",
+    description:
+      "Datenschutzhinweise von Soulé Smart Business zur Verarbeitung personenbezogener Daten auf dieser Website.",
+    path: "/datenschutz",
+  }),
+  robots: { index: false, follow: true },
+};
 
 export default function DatenschutzPage() {
   return (

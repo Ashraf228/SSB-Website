@@ -34,13 +34,15 @@ export async function POST(req: Request) {
       from,
       replyTo: body.email,
       to,
-      subject: "Neue Anfrage über Website",
+      subject: "Neue KI-Potenzialanalyse über Website",
       text: `
         Name: ${body.name}
         Email: ${body.email}
         Telefon: ${body.phone || "-"}
         Firma: ${body.company || "-"}
-        Nachricht: ${body.message}
+        Branche: ${body.industry || "-"}
+        Gewünschte Lösung: ${body.solution || "-"}
+        Prozesse mit hohem Zeitaufwand: ${body.message || "-"}
       `,
     })
 

@@ -38,7 +38,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/logo-mark.png"
-              alt="Soule Smart Business"
+              alt="Soulé Smart Business"
               width={56}
               height={56}
               className="h-12 w-12 object-contain"
@@ -47,7 +47,7 @@ export default function Navbar() {
               <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--ink-2)]">
                 Soulé Smart Business
               </div>
-              <div className="text-xs text-[var(--muted)]">Smart Business mit KI und Struktur</div>
+              <div className="text-xs text-[var(--muted)]">KI-Agenten und Automatisierung</div>
             </div>
           </Link>
 
@@ -71,7 +71,7 @@ export default function Navbar() {
 
           <div className="hidden items-center gap-3 lg:flex">
             <OpenContactButton className="rounded-full bg-[var(--ink-1)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[var(--accent-2)]">
-              Beratung starten
+              KI-Potenzial prüfen
             </OpenContactButton>
           </div>
 
@@ -124,7 +124,7 @@ export default function Navbar() {
 
               <div className="mt-6">
                 <OpenContactButton className="w-full rounded-2xl bg-[var(--accent-2)] px-5 py-4 text-sm font-semibold text-white transition hover:bg-[var(--ink-1)]">
-                  Beratung starten
+                  KI-Potenzial prüfen
                 </OpenContactButton>
               </div>
             </motion.div>

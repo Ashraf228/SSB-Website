@@ -1,52 +1,75 @@
 export const navLinks = [
-  { href: "/", label: "Start" },
-  { href: "/leistungen", label: "Leistungen" },
+  { href: "/leistungen/ki-agenten", label: "KI-Agenten" },
+  { href: "/leistungen", label: "Lösungen" },
+  { href: "/branchen", label: "Branchen" },
   { href: "/prozess", label: "Prozess" },
-  { href: "/ueber-uns", label: "Über uns" },
   { href: "/faq", label: "FAQ" },
   { href: "/kontakt", label: "Kontakt" },
 ];
 
 export const serviceCards = [
   {
-    title: "Websites & digitale Präsenz",
-    href: "/leistungen/websites",
-    eyebrow: "Website",
+    title: "KI-Agenten",
+    href: "/leistungen/ki-agenten",
+    eyebrow: "Kernlösung",
     description:
-      "Moderne responsive Websites mit klarer Struktur, sauberem Markenauftritt und starker Anfrageführung.",
-    bullets: ["Responsive Aufbau", "Premium-Auftritt", "Klare Conversion-Wege"],
+      "Eigene KI-Agenten, die Anfragen verstehen, Gespräche führen, Informationen bereitstellen und erste Aufgaben direkt übernehmen.",
+    bullets: ["Digitale Erstberatung", "Strukturierte Anfragen", "24/7 einsatzbereit"],
   },
   {
-    title: "Google-Sichtbarkeit / SEO-Basis",
-    href: "/leistungen",
-    eyebrow: "Sichtbarkeit",
+    title: "KI-Support-Agenten",
+    href: "/leistungen/ki-agenten",
+    eyebrow: "Support",
     description:
-      "Solide Grundlagen für Suchmaschinen, klare Seitenstruktur und Inhalte, die dein Angebot sauber kommunizieren.",
-    bullets: ["SEO-Basis", "Struktur & Inhalte", "Bessere Auffindbarkeit"],
+      "Support-Agenten beantworten wiederkehrende Fragen, entlasten Teams und sorgen für schnellere Reaktion bei Standardanliegen.",
+    bullets: ["FAQs automatisieren", "Support entlasten", "Antwortzeiten verkürzen"],
   },
   {
-    title: "KI-Automation",
+    title: "KI-Lead-Agenten",
+    href: "/leistungen/ki-agenten",
+    eyebrow: "Leads",
+    description:
+      "Lead-Agenten qualifizieren Interessenten vor, sammeln die richtigen Informationen und bereiten Gespräche deutlich besser vor.",
+    bullets: ["Leads vorqualifizieren", "Termine vorbereiten", "Bessere Erstgespräche"],
+  },
+  {
+    title: "KI-Wissensdatenbank",
+    href: "/leistungen/ki-agenten",
+    eyebrow: "Wissen",
+    description:
+      "Interne oder externe Wissensagenten liefern schneller die richtigen Antworten und machen Wissen direkt nutzbar.",
+    bullets: ["Wissen zentralisieren", "Antworten beschleunigen", "Teams entlasten"],
+  },
+  {
+    title: "KI-Prozessautomatisierung",
     href: "/leistungen/ki-automation",
     eyebrow: "Automation",
     description:
-      "Digitale Abläufe, die manuelle Arbeit reduzieren, Prozesse beschleunigen und Teams spürbar entlasten.",
-    bullets: ["Effizienz im Alltag", "Weniger manuelle Schritte", "Saubere Workflows"],
+      "KI-Automatisierung reduziert repetitive Arbeit, beschleunigt Abläufe und schafft operative Ruhe im Tagesgeschäft.",
+    bullets: ["Prozesse beschleunigen", "Weniger manuelle Arbeit", "Klare Workflows"],
   },
   {
-    title: "KI-Chatbot / Beratungsassistent",
-    href: "/leistungen/ki-chatbot",
-    eyebrow: "Chatbot",
+    title: "KI-E-Commerce-Beratung",
+    href: "/leistungen/ki-agenten",
+    eyebrow: "E-Commerce",
     description:
-      "Ein eigener Assistent, der Fragen beantwortet, Gespräche vorbereitet und Kundenanfragen strukturiert aufnimmt.",
-    bullets: ["FAQ beantworten", "Beratung vorbereiten", "Anfragen strukturieren"],
+      "Beratende KI-Agenten unterstützen im E-Commerce bei Produktauswahl, Orientierung und Vorqualifizierung von Kundenanliegen.",
+    bullets: ["Beratung im Shop", "Produkthilfe", "Mehr Conversion im Dialog"],
+  },
+];
+
+export const supportingInfrastructure = [
+  {
+    title: "Websites als KI-Systembasis",
+    href: "/leistungen/websites",
+    description:
+      "Website, Markenauftritt und Anfrageführung bilden die Infrastruktur, auf der KI-Agenten und Automatisierung sinnvoll arbeiten können.",
   },
   {
-    title: "Automatisierte Anfrage- und Terminprozesse",
-    href: "/leistungen/ki-automation",
-    eyebrow: "Prozesse",
+    title: "SEO-Basis & Sichtbarkeit",
+    href: "/leistungen/websites",
     description:
-      "Anfragen, Terminwünsche und wiederkehrende Kommunikation lassen sich deutlich strukturierter und schneller abbilden.",
-    bullets: ["Lead-Vorqualifizierung", "Terminabläufe", "Mehr operative Ruhe"],
+      "Sichtbarkeit und saubere Informationsarchitektur unterstützen den Vertrieb, stehen aber nicht mehr als Hauptleistung im Zentrum.",
   },
 ];
 
@@ -84,11 +107,11 @@ export const faqItems = [
     a: "Nach einem kurzen Erstgespräch analysieren wir Ziele, Anforderungen und Prioritäten. Danach folgt eine klare Struktur, die Umsetzung und der Feinschliff bis zum Go-Live.",
   },
   {
-    q: "Welche Tools können bei KI-Automationen angebunden werden?",
+    q: "Welche Tools können bei KI-Automatisierung angebunden werden?",
     a: "Typisch sind Kalender, E-Mail, CRM, Support-Systeme, Formulare, Datenbanken und interne Tools. Die Anbindung erfolgt je nach System via API oder bestehende Automationsstrecken.",
   },
   {
-    q: "Was ist ein KI-Beratungsassistent genau?",
+    q: "Was ist ein KI-Agent genau?",
     a: "Ein eigener digitaler Assistent, der Fragen beantwortet, Informationen bereitstellt, Gespräche vorbereitet und strukturierte Anfragen an dein Unternehmen übergibt.",
   },
   {
@@ -122,11 +145,11 @@ export const founderHighlights = [
 
 export const founderParagraphs = [
   "Ich bin Ashraf Soulé, Gründer von Soulé Smart Business.",
-  "Ich unterstütze Unternehmen dabei, ihre digitale Präsenz zu verbessern und interne Abläufe effizienter zu gestalten.",
-  "Dabei geht es nicht nur um Websites oder einzelne Tools, sondern um eine klare digitale Struktur, die im Alltag funktioniert und langfristig entlastet.",
-  "Viele Unternehmen arbeiten bereits digital – jedoch oft ohne klare Prozesse. Anfragen kommen ungefiltert rein, Termine werden manuell abgestimmt und wiederkehrende Aufgaben kosten unnötig Zeit.",
+  "Ich unterstütze Unternehmen dabei, KI-Agenten und Automatisierung so einzusetzen, dass reale Entlastung im Alltag entsteht.",
+  "Dabei geht es nicht um isolierte Tools, sondern um Systeme, die Anfragen übernehmen, Support entlasten, Termine vorbereiten und interne Abläufe beschleunigen.",
+  "Viele Unternehmen arbeiten bereits digital – jedoch ohne klare Automatisierung. Anfragen kommen ungefiltert rein, Support kostet Zeit und repetitive Aufgaben blockieren Kapazität.",
   "Genau hier setze ich an.",
-  "Als bewusst schlank aufgestelltes Unternehmen kann ich flexibel, direkt und ohne unnötige Komplexität arbeiten. Mein Ziel ist es, Unternehmen nicht nur kurzfristig zu unterstützen, sondern sie langfristig als Digitalisierungspartner zu begleiten.",
+  "Als bewusst schlank aufgestelltes Unternehmen kann ich flexibel, direkt und ohne unnötige Komplexität arbeiten. Mein Ziel ist es, Unternehmen langfristig mit KI-Agenten und Automatisierungslösungen effizienter aufzustellen.",
 ];
 
 export const contactDetails = {

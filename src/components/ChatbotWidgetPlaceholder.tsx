@@ -24,7 +24,7 @@ export default function ChatbotWidgetPlaceholder({
     <div className="overflow-hidden rounded-[1.75rem] border border-[var(--line)] bg-white shadow-[0_24px_80px_rgba(11,18,32,0.18)]">
       <div className="bg-[linear-gradient(135deg,#0B1220_0%,#1E3352_100%)] px-5 py-4 text-white">
         <div className="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">
-          KI-Beratung starten
+          KI-Potenzial prüfen
         </div>
         <div className="mt-2 text-lg font-semibold">Soulé Smart Business Assistent</div>
       </div>
@@ -37,7 +37,7 @@ export default function ChatbotWidgetPlaceholder({
           Zum Beispiel:
           <div className="mt-2 space-y-2 text-[var(--ink-2)]">
             <div>&quot;Welche Lösung passt für mein Unternehmen?&quot;</div>
-            <div>&quot;Wie kann ein KI-Chatbot Anfragen übernehmen?&quot;</div>
+            <div>&quot;Wie kann ein KI-Agent Anfragen übernehmen?&quot;</div>
             <div>&quot;Wie laufen Website und Automatisierung zusammen?&quot;</div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function ChatbotWidgetPlaceholder({
         whileTap={{ scale: 0.98 }}
         className="pointer-events-auto rounded-full bg-[linear-gradient(135deg,#0B1220_0%,#1E3352_100%)] px-5 py-4 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(11,18,32,0.28)]"
       >
-        KI-Beratung starten
+        KI-Potenzial prüfen
       </motion.button>
     </div>
   );

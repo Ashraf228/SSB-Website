@@ -145,7 +145,7 @@ export default function UseCaseProofSection({
             </div>
 
             <OpenContactButton className="mt-8 inline-flex min-h-[56px] items-center justify-center rounded-full bg-white px-6 py-4 text-sm font-semibold text-[var(--ink-1)] transition hover:bg-[var(--surface-1)]">
-              Eigenen Use Case prüfen
+              KI-Potenzial prüfen
             </OpenContactButton>
           </div>
         </div>

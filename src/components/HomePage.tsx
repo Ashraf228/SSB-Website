@@ -93,10 +93,45 @@ const useCases = [
 
 const taskSteps = [
   "Anfrage erkannt",
-  "Kunde vorqualifiziert",
+  "KI-Agent analysiert Anfrage",
+  "Vorqualifizierung läuft",
   "Antwort vorbereitet",
-  "Terminwunsch erfasst",
-  "Übergabe an Team möglich",
+  "Übergabe an Mitarbeiter möglich",
+];
+
+const trustPills = [
+  "Praxisnah statt theoretisch",
+  "Keine blinde Vollautomatisierung",
+  "Für KMU geeignet",
+  "Menschliche Übergabe möglich",
+];
+
+const workflowCards = [
+  {
+    title: "Eingehende Kundenanfrage",
+    text: "Anliegen, Kanal und Dringlichkeit werden im Erstkontakt erkannt.",
+    status: "eingegangen",
+  },
+  {
+    title: "KI-Agent analysiert Anfrage",
+    text: "Thema, Kontext und nächster sinnvoller Schritt werden eingeordnet.",
+    status: "analysiert",
+  },
+  {
+    title: "Vorqualifizierung läuft",
+    text: "Fehlende Daten werden abgefragt und das Anliegen sauber vorbereitet.",
+    status: "aktiv",
+  },
+  {
+    title: "Antwort vorbereitet",
+    text: "Relevante Informationen und eine passende Reaktion stehen strukturiert bereit.",
+    status: "bereit",
+  },
+  {
+    title: "Übergabe an Mitarbeiter möglich",
+    text: "Komplexe Fälle gehen mit Kontext und klaren Daten an das Team weiter.",
+    status: "sicher",
+  },
 ];
 
 const processPreviewSteps = [
@@ -191,13 +226,11 @@ export default function HomePage() {
             </motion.div>
 
             <div className="mt-10 grid gap-3 text-sm text-[var(--ink-2)] sm:grid-cols-2">
-              {[
-                "Kundenanfragen automatisieren",
-                "Support entlasten",
-                "Leads besser vorbereiten",
-                "Repetitive Arbeit reduzieren",
-              ].map((item) => (
-                <div key={item} className="rounded-full border border-[var(--line)] bg-white/78 px-4 py-3 shadow-sm">
+              {trustPills.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-full border border-[var(--line)] bg-white/82 px-4 py-3 shadow-sm transition hover:border-[var(--accent-2)] hover:bg-white"
+                >
                   {item}
                 </div>
               ))}
@@ -210,43 +243,87 @@ export default function HomePage() {
             transition={{ duration: 0.68, delay: 0.12, ease: "easeOut" }}
             className="relative"
           >
-            <div className="absolute -inset-4 rounded-[2rem] bg-[radial-gradient(circle_at_top,rgba(30,51,82,0.28),rgba(255,255,255,0.12))] blur-2xl" />
-            <div className="relative overflow-hidden rounded-[2.2rem] border border-white/10 bg-[linear-gradient(160deg,#0B1220_0%,#16263f_48%,#0B1220_100%)] p-8 text-white shadow-[0_34px_100px_rgba(11,18,32,0.3)]">
+            <div className="absolute -inset-5 rounded-[2.4rem] bg-[radial-gradient(circle_at_top,rgba(30,51,82,0.36),rgba(255,255,255,0.06))] blur-3xl" />
+            <div className="hero-panel-glow relative overflow-hidden rounded-[2.3rem] border border-white/12 bg-[linear-gradient(165deg,rgba(11,18,32,0.95)_0%,rgba(20,35,58,0.92)_46%,rgba(11,18,32,0.98)_100%)] p-6 text-white shadow-[0_34px_100px_rgba(11,18,32,0.34)] backdrop-blur md:p-8">
               <div className="pointer-events-none absolute inset-0 opacity-18 [background-image:linear-gradient(rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:26px_26px]" />
-              <div className="text-sm uppercase tracking-[0.3em] text-white/45">Live Agent Flow</div>
-              <h2 className="mt-3 max-w-lg text-2xl font-semibold leading-tight">
-                Ein KI-Agent erkennt Anliegen, strukturiert Informationen und bereitet den nächsten Schritt vor.
-              </h2>
-
-              <div className="mt-8 space-y-3">
-                {taskSteps.map((item, index) => (
-                  <div
-                    key={item}
-                    className="group flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 transition hover:border-white/18 hover:bg-white/[0.08]"
-                  >
-                    <div className="flex items-center gap-3">
-                      <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/10 text-xs font-semibold text-white/70">
-                        0{index + 1}
-                      </span>
-                      <span className="text-sm font-medium text-white/84">{item}</span>
-                    </div>
-                    <span className="rounded-full border border-emerald-400/18 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-200">
-                      aktiv
-                    </span>
+              <div className="pointer-events-none absolute inset-x-8 top-[8.7rem] hidden h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.34),transparent)] lg:block" />
+              <div className="relative">
+                <div className="flex items-center justify-between gap-4">
+                  <div>
+                    <div className="text-sm uppercase tracking-[0.3em] text-white/45">Live Agent Flow</div>
+                    <h2 className="mt-3 max-w-lg text-2xl font-semibold leading-tight">
+                      Ein KI-Agent analysiert Anfragen, qualifiziert Inhalte und bereitet den
+                      nächsten Schritt kontrolliert vor.
+                    </h2>
                   </div>
-                ))}
-              </div>
-
-              <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                <div className="rounded-2xl border border-white/10 bg-white/[0.05] p-4">
-                  <div className="text-sm text-white/52">Ergebnis</div>
-                  <div className="mt-2 text-3xl font-semibold">klarer</div>
-                  <div className="mt-2 text-sm text-white/70">Anfragen, Antworten und nächste Schritte</div>
+                  <div className="hidden rounded-full border border-emerald-400/18 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-200 sm:block">
+                    24/7 aktiv
+                  </div>
                 </div>
-                <div className="rounded-2xl border border-white/10 bg-white/[0.05] p-4">
-                  <div className="text-sm text-white/52">Effekt</div>
-                  <div className="mt-2 text-3xl font-semibold">weniger</div>
-                  <div className="mt-2 text-sm text-white/70">manuelle Reibung im Tagesgeschäft</div>
+
+                <div className="mt-8 grid gap-3">
+                  {workflowCards.map((item, index) => (
+                    <motion.div
+                      key={item.title}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.42, delay: 0.14 + index * 0.06, ease: "easeOut" }}
+                      className={[
+                        "group relative overflow-hidden rounded-[1.4rem] border px-4 py-4 transition",
+                        index === 2
+                          ? "float-gentle border-white/18 bg-white/[0.09] shadow-[0_16px_44px_rgba(31,79,134,0.18)]"
+                          : "border-white/10 bg-white/[0.05] hover:border-white/18 hover:bg-white/[0.08]",
+                      ].join(" ")}
+                    >
+                      <div className="absolute inset-y-0 left-0 w-px bg-[linear-gradient(180deg,transparent,rgba(255,255,255,0.4),transparent)]" />
+                      <div className="flex items-start gap-4">
+                        <div className="flex items-center gap-3">
+                          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/10 text-xs font-semibold text-white/72">
+                            0{index + 1}
+                          </span>
+                          <span className="status-pulse mt-0.5 h-2.5 w-2.5 rounded-full bg-emerald-300" />
+                        </div>
+
+                        <div className="min-w-0 flex-1">
+                          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                            <div className="text-sm font-semibold text-white/90">{item.title}</div>
+                            <span className="rounded-full border border-white/10 bg-white/8 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/62">
+                              {item.status}
+                            </span>
+                          </div>
+                          <p className="mt-2 max-w-md text-sm leading-6 text-white/68">{item.text}</p>
+                        </div>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+
+                <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-4 backdrop-blur">
+                    <div className="text-sm text-white/52">Systemeffekt</div>
+                    <div className="mt-2 text-3xl font-semibold">klarer</div>
+                    <div className="mt-2 text-sm leading-6 text-white/70">
+                      strukturierte Anfragen, Antworten und nächste Schritte
+                    </div>
+                  </div>
+                  <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-4 backdrop-blur">
+                    <div className="text-sm text-white/52">Operativer Nutzen</div>
+                    <div className="mt-2 text-3xl font-semibold">weniger</div>
+                    <div className="mt-2 text-sm leading-6 text-white/70">
+                      manuelle Reibung, Rückfragen und verlorene Kontextwechsel
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 flex flex-wrap gap-3 text-xs text-white/72">
+                  {taskSteps.map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-full border border-white/10 bg-white/[0.06] px-3 py-2 backdrop-blur"
+                    >
+                      {item}
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

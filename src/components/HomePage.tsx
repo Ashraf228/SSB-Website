@@ -92,18 +92,17 @@ const useCases = [
 ];
 
 const taskSteps = [
-  "Anfrage erkannt",
-  "KI-Agent analysiert Anfrage",
-  "Vorqualifizierung läuft",
-  "Antwort vorbereitet",
-  "Übergabe an Mitarbeiter möglich",
+  "Kundenanfrage erkannt",
+  "KI-Agent analysiert Anliegen",
+  "Vorqualifiziert & vorbereitet",
+  "Übergabe ans Team möglich",
 ];
 
-const trustPills = [
-  "Praxisnah statt theoretisch",
-  "Keine blinde Vollautomatisierung",
-  "Für KMU geeignet",
-  "Menschliche Übergabe möglich",
+const benefitList = [
+  "weniger manuelle Kommunikation",
+  "schnellere Reaktionszeiten",
+  "strukturierte Anfragen",
+  "menschliche Übergabe möglich",
 ];
 
 const workflowCards = [
@@ -165,7 +164,7 @@ const processPreviewSteps = [
 export default function HomePage() {
   return (
     <main className="overflow-hidden">
-      <section className="relative isolate px-6 pb-18 pt-16 md:px-10 md:pb-24 md:pt-20">
+      <section className="relative isolate px-6 pb-16 pt-12 md:px-10 md:pb-20 md:pt-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_18%,rgba(30,51,82,0.26),transparent_30%),radial-gradient(circle_at_82%_18%,rgba(245,166,91,0.12),transparent_20%),linear-gradient(180deg,#f8fafc_0%,#eef3f9_48%,#ffffff_100%)]" />
         <div className="pointer-events-none absolute inset-0 opacity-35 [background-image:linear-gradient(rgba(16,24,40,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(16,24,40,0.05)_1px,transparent_1px)] [background-size:72px_72px] [mask-image:linear-gradient(180deg,rgba(0,0,0,0.55),transparent_78%)]" />
         <div className="pointer-events-none absolute inset-y-0 right-[-18%] flex items-center justify-center md:right-[-8%]">
@@ -177,36 +176,53 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="relative mx-auto grid max-w-7xl gap-12 md:grid-cols-[1.02fr_0.98fr] md:items-end">
+        <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.18fr_0.82fr] lg:items-center">
           <div className="max-w-3xl">
             <motion.div
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-white/82 px-4 py-2 text-sm text-[var(--ink-2)] shadow-sm"
+              className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-white/86 px-4 py-2 text-sm font-medium text-[var(--ink-2)] shadow-sm"
             >
               <span className="h-2 w-2 rounded-full bg-[var(--accent-1)]" />
-              KI-Agenten und Automatisierung für Unternehmen
+              KI-Agenten für Unternehmen
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.64, delay: 0.06, ease: "easeOut" }}
-              className="mt-8 text-4xl font-semibold leading-[0.96] tracking-[-0.06em] text-[var(--ink-1)] sm:text-5xl md:text-7xl"
+              className="mt-6 max-w-4xl text-4xl font-semibold leading-[0.94] tracking-[-0.06em] text-[var(--ink-1)] sm:text-5xl lg:text-[5.25rem]"
             >
-              KI-Agenten, die Arbeit abnehmen – nicht nur Fragen beantworten
+              KI-Agenten, die Kundenanfragen, Support und Prozesse entlasten.
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.64, delay: 0.14, ease: "easeOut" }}
-              className="mt-7 max-w-2xl text-lg leading-8 text-[var(--muted)]"
+              className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)]"
             >
-              Wir entwickeln KI-Lösungen, die Kundenanfragen beantworten, Leads qualifizieren,
-              Support entlasten und wiederkehrende Prozesse automatisieren.
+              Soulé Smart Business entwickelt KI-Agenten, die wiederkehrende Aufgaben
+              automatisieren, Anfragen strukturieren und Teams messbar entlasten.
             </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.64, delay: 0.18, ease: "easeOut" }}
+              className="mt-7 grid gap-3 text-sm text-[var(--ink-2)] sm:grid-cols-2"
+            >
+              {benefitList.map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-3 rounded-full border border-[var(--line)] bg-white/84 px-4 py-3 shadow-sm"
+                >
+                  <span className="h-2.5 w-2.5 rounded-full bg-[var(--accent-1)]" />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -225,15 +241,8 @@ export default function HomePage() {
               </Link>
             </motion.div>
 
-            <div className="mt-10 grid gap-3 text-sm text-[var(--ink-2)] sm:grid-cols-2">
-              {trustPills.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-full border border-[var(--line)] bg-white/82 px-4 py-3 shadow-sm transition hover:border-[var(--accent-2)] hover:bg-white"
-                >
-                  {item}
-                </div>
-              ))}
+            <div className="mt-5 text-sm font-medium text-[var(--muted)]">
+              Unverbindlich · praxisnah · klare Grenzen
             </div>
           </div>
 
@@ -241,19 +250,17 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.68, delay: 0.12, ease: "easeOut" }}
-            className="relative"
+            className="relative mx-auto w-full max-w-[32rem] lg:ml-auto"
           >
-            <div className="absolute -inset-5 rounded-[2.4rem] bg-[radial-gradient(circle_at_top,rgba(30,51,82,0.36),rgba(255,255,255,0.06))] blur-3xl" />
-            <div className="hero-panel-glow relative overflow-hidden rounded-[2.3rem] border border-white/12 bg-[linear-gradient(165deg,rgba(11,18,32,0.95)_0%,rgba(20,35,58,0.92)_46%,rgba(11,18,32,0.98)_100%)] p-6 text-white shadow-[0_34px_100px_rgba(11,18,32,0.34)] backdrop-blur md:p-8">
-              <div className="pointer-events-none absolute inset-0 opacity-18 [background-image:linear-gradient(rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:26px_26px]" />
-              <div className="pointer-events-none absolute inset-x-8 top-[8.7rem] hidden h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.34),transparent)] lg:block" />
+            <div className="absolute -inset-4 rounded-[2rem] bg-[radial-gradient(circle_at_top,rgba(30,51,82,0.24),rgba(255,255,255,0.04))] blur-3xl" />
+            <div className="hero-panel-glow relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(165deg,rgba(11,18,32,0.92)_0%,rgba(18,32,52,0.9)_52%,rgba(11,18,32,0.96)_100%)] p-5 text-white shadow-[0_28px_80px_rgba(11,18,32,0.28)] backdrop-blur md:p-6">
+              <div className="pointer-events-none absolute inset-0 opacity-14 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:30px_30px]" />
               <div className="relative">
-                <div className="flex items-center justify-between gap-4">
+                <div className="flex items-start justify-between gap-4">
                   <div>
                     <div className="text-sm uppercase tracking-[0.3em] text-white/45">Live Agent Flow</div>
-                    <h2 className="mt-3 max-w-lg text-2xl font-semibold leading-tight">
-                      Ein KI-Agent analysiert Anfragen, qualifiziert Inhalte und bereitet den
-                      nächsten Schritt kontrolliert vor.
+                    <h2 className="mt-3 max-w-md text-xl font-semibold leading-tight md:text-2xl">
+                      Ein kompakter Ablauf von Anfrage bis Übergabe.
                     </h2>
                   </div>
                   <div className="hidden rounded-full border border-emerald-400/18 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-200 sm:block">
@@ -261,7 +268,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="mt-8 grid gap-3">
+                <div className="mt-7 space-y-3">
                   {workflowCards.map((item, index) => (
                     <motion.div
                       key={item.title}
@@ -269,59 +276,51 @@ export default function HomePage() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.42, delay: 0.14 + index * 0.06, ease: "easeOut" }}
                       className={[
-                        "group relative overflow-hidden rounded-[1.4rem] border px-4 py-4 transition",
+                        "group relative overflow-hidden rounded-[1.35rem] border px-4 py-3.5 transition",
                         index === 2
-                          ? "float-gentle border-white/18 bg-white/[0.09] shadow-[0_16px_44px_rgba(31,79,134,0.18)]"
-                          : "border-white/10 bg-white/[0.05] hover:border-white/18 hover:bg-white/[0.08]",
+                          ? "float-gentle border-white/14 bg-white/[0.09] shadow-[0_14px_38px_rgba(31,79,134,0.14)]"
+                          : "border-white/8 bg-white/[0.045] hover:border-white/14 hover:bg-white/[0.065]",
                       ].join(" ")}
                     >
-                      <div className="absolute inset-y-0 left-0 w-px bg-[linear-gradient(180deg,transparent,rgba(255,255,255,0.4),transparent)]" />
+                      {index < workflowCards.length - 1 ? (
+                        <div className="pointer-events-none absolute bottom-[-14px] left-8 h-4 w-px bg-[linear-gradient(180deg,rgba(255,255,255,0.24),transparent)]" />
+                      ) : null}
                       <div className="flex items-start gap-4">
-                        <div className="flex items-center gap-3">
-                          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/10 text-xs font-semibold text-white/72">
-                            0{index + 1}
-                          </span>
+                        <div className="flex items-center gap-2">
                           <span className="status-pulse mt-0.5 h-2.5 w-2.5 rounded-full bg-emerald-300" />
                         </div>
 
                         <div className="min-w-0 flex-1">
                           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                            <div className="text-sm font-semibold text-white/90">{item.title}</div>
-                            <span className="rounded-full border border-white/10 bg-white/8 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/62">
+                            <div className="text-sm font-semibold text-white/90 md:text-[15px]">{item.title}</div>
+                            <span className="rounded-full border border-white/8 bg-white/8 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/60">
                               {item.status}
                             </span>
                           </div>
-                          <p className="mt-2 max-w-md text-sm leading-6 text-white/68">{item.text}</p>
+                          <p className="mt-1.5 max-w-md text-sm leading-6 text-white/64">{item.text}</p>
                         </div>
                       </div>
                     </motion.div>
                   ))}
                 </div>
 
-                <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-4 backdrop-blur">
-                    <div className="text-sm text-white/52">Systemeffekt</div>
-                    <div className="mt-2 text-3xl font-semibold">klarer</div>
-                    <div className="mt-2 text-sm leading-6 text-white/70">
-                      strukturierte Anfragen, Antworten und nächste Schritte
-                    </div>
-                  </div>
-                  <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-4 backdrop-blur">
-                    <div className="text-sm text-white/52">Operativer Nutzen</div>
-                    <div className="mt-2 text-3xl font-semibold">weniger</div>
-                    <div className="mt-2 text-sm leading-6 text-white/70">
-                      manuelle Reibung, Rückfragen und verlorene Kontextwechsel
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-6 flex flex-wrap gap-3 text-xs text-white/72">
-                  {taskSteps.map((item) => (
+                <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                  {[
+                    {
+                      label: "Nutzen",
+                      text: "klarere Anfragen und bessere Vorbereitung",
+                    },
+                    {
+                      label: "Ergebnis",
+                      text: "weniger manuelle Rückfragen im Alltag",
+                    },
+                  ].map((item) => (
                     <div
-                      key={item}
-                      className="rounded-full border border-white/10 bg-white/[0.06] px-3 py-2 backdrop-blur"
+                      key={item.label}
+                      className="rounded-[1.35rem] border border-white/8 bg-white/[0.05] px-4 py-4 backdrop-blur"
                     >
-                      {item}
+                      <div className="text-xs uppercase tracking-[0.22em] text-white/45">{item.label}</div>
+                      <div className="mt-2 text-sm leading-6 text-white/74">{item.text}</div>
                     </div>
                   ))}
                 </div>

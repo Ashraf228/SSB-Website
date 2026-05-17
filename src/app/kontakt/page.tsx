@@ -32,7 +32,7 @@ const fitPoints = [
 export default function KontaktPage() {
   return (
     <main>
-      <section className="relative overflow-hidden px-6 pb-14 pt-20 md:px-10 md:pt-24">
+      <section className="relative overflow-hidden px-6 pb-12 pt-16 md:px-10 md:pb-14 md:pt-24">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(30,51,82,0.12),_transparent_34%),radial-gradient(circle_at_85%_8%,_rgba(11,18,32,0.08),_transparent_26%)]" />
         <div className="mx-auto max-w-7xl">
           <div className="max-w-4xl">
@@ -47,7 +47,7 @@ export default function KontaktPage() {
               KI-Agenten automatisieren lassen – z. B. Support, Leads, Terminabfragen oder
               interne Prozesse.
             </p>
-            <div className="mt-8 inline-flex rounded-full border border-[var(--line)] bg-white/88 px-5 py-3 text-sm font-medium text-[var(--ink-2)] shadow-[0_12px_32px_rgba(11,18,32,0.04)] backdrop-blur">
+            <div className="mt-8 inline-flex max-w-full rounded-2xl border border-[var(--line)] bg-white/88 px-4 py-3 text-sm font-medium leading-6 text-[var(--ink-2)] shadow-[0_12px_32px_rgba(11,18,32,0.04)] backdrop-blur sm:rounded-full sm:px-5">
               Unverbindlich · praxisnah · auf konkrete Prozesse fokussiert
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function KontaktPage() {
       <Section>
         <div className="mx-auto grid max-w-7xl gap-8 xl:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-8">
-            <div className="rounded-[2rem] border border-[rgba(30,51,82,0.14)] bg-[linear-gradient(135deg,rgba(11,18,32,0.98)_0%,rgba(30,51,82,0.95)_100%)] p-8 text-white shadow-[0_24px_80px_rgba(11,18,32,0.2)]">
+            <div className="rounded-[2rem] border border-[rgba(30,51,82,0.14)] bg-[linear-gradient(135deg,rgba(11,18,32,0.98)_0%,rgba(30,51,82,0.95)_100%)] p-6 text-white shadow-[0_24px_80px_rgba(11,18,32,0.2)] sm:p-8">
               <div className="text-sm font-semibold uppercase tracking-[0.24em] text-white/48">
                 Analyse
               </div>
@@ -68,7 +68,7 @@ export default function KontaktPage() {
                 {analysisPoints.map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-3 rounded-full border border-white/10 bg-white/6 px-4 py-3 text-sm text-white/84"
+                    className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/6 px-4 py-3 text-sm leading-6 text-white/84 sm:items-center sm:rounded-full"
                   >
                     <span className="h-2.5 w-2.5 rounded-full bg-white" />
                     <span>{item}</span>
@@ -81,7 +81,7 @@ export default function KontaktPage() {
           </div>
 
           <div className="space-y-6">
-            <div className="rounded-[2rem] border border-[var(--line)] bg-white p-7 shadow-[0_16px_44px_rgba(11,18,32,0.05)]">
+            <div className="rounded-[2rem] border border-[var(--line)] bg-white p-6 shadow-[0_16px_44px_rgba(11,18,32,0.05)] sm:p-7">
               <div className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent-2)]">
                 Geeignet für
               </div>
@@ -92,7 +92,7 @@ export default function KontaktPage() {
                 {fitPoints.map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-3 rounded-full border border-[var(--line)] bg-[var(--surface-0)] px-4 py-3 text-sm text-[var(--ink-2)]"
+                    className="flex items-start gap-3 rounded-2xl border border-[var(--line)] bg-[var(--surface-0)] px-4 py-3 text-sm leading-6 text-[var(--ink-2)] sm:items-center sm:rounded-full"
                   >
                     <span className="h-2.5 w-2.5 rounded-full bg-[var(--accent-1)]" />
                     <span>{item}</span>
@@ -101,7 +101,7 @@ export default function KontaktPage() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-[var(--line)] bg-white p-7 shadow-[0_16px_44px_rgba(11,18,32,0.05)]">
+            <div className="rounded-[2rem] border border-[var(--line)] bg-white p-6 shadow-[0_16px_44px_rgba(11,18,32,0.05)] sm:p-7">
               <div className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent-2)]">
                 Kontakt
               </div>
@@ -116,7 +116,7 @@ export default function KontaktPage() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-[var(--line)] bg-[linear-gradient(135deg,#0B1220_0%,#1E3352_100%)] p-7 text-white shadow-[0_18px_56px_rgba(11,18,32,0.18)]">
+            <div className="rounded-[2rem] border border-[var(--line)] bg-[linear-gradient(135deg,#0B1220_0%,#1E3352_100%)] p-6 text-white shadow-[0_18px_56px_rgba(11,18,32,0.18)] sm:p-7">
               <div className="text-sm font-semibold uppercase tracking-[0.22em] text-white/50">
                 Soforteinstieg
               </div>

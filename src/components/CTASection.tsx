@@ -10,7 +10,7 @@ type CTASectionProps = {
 export default function CTASection({ eyebrow, title, description }: CTASectionProps) {
   return (
     <section className="px-6 pb-6 pt-8 md:px-10 md:pb-10">
-      <div className="mx-auto max-w-6xl rounded-[2.2rem] bg-[linear-gradient(135deg,#0B1220_0%,#1E3352_100%)] px-8 py-12 text-white shadow-[0_28px_90px_rgba(11,18,32,0.28)] md:px-12">
+      <div className="mx-auto max-w-6xl rounded-[2rem] bg-[linear-gradient(135deg,#0B1220_0%,#1E3352_100%)] px-6 py-10 text-white shadow-[0_28px_90px_rgba(11,18,32,0.28)] sm:px-8 md:rounded-[2.2rem] md:px-12 md:py-12">
         <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-end">
           <div>
             <div className="text-sm font-semibold uppercase tracking-[0.28em] text-white/50">
@@ -21,10 +21,10 @@ export default function CTASection({ eyebrow, title, description }: CTASectionPr
           </div>
 
           <div className="flex flex-col gap-3 md:items-end">
-            <OpenChatbotButton className="rounded-full bg-white px-6 py-4 text-sm font-semibold text-[var(--ink-1)] transition hover:bg-[var(--surface-1)]">
+            <OpenChatbotButton className="w-full rounded-full bg-white px-6 py-4 text-sm font-semibold text-[var(--ink-1)] transition hover:bg-[var(--surface-1)] md:w-auto">
               KI-Potenzial prüfen
             </OpenChatbotButton>
-            <OpenContactButton className="rounded-full border border-white/20 px-6 py-4 text-sm font-semibold text-white transition hover:bg-white/10">
+            <OpenContactButton className="w-full rounded-full border border-white/20 px-6 py-4 text-sm font-semibold text-white transition hover:bg-white/10 md:w-auto">
               Kostenlose Analyse anfragen
             </OpenContactButton>
           </div>
@@ -39,7 +39,7 @@ export default function CTASection({ eyebrow, title, description }: CTASectionPr
           ].map((item) => (
             <div
               key={item}
-              className="rounded-full border border-white/12 bg-white/6 px-4 py-2 text-xs font-medium text-white/78"
+              className="rounded-2xl border border-white/12 bg-white/6 px-4 py-2 text-xs font-medium text-white/78 sm:rounded-full"
             >
               {item}
             </div>

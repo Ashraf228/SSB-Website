@@ -78,7 +78,7 @@ export default function UseCaseProofSection({
               transition={{ duration: 0.42, delay: index * 0.04, ease: "easeOut" }}
               className="group overflow-hidden rounded-[2rem] border border-[var(--line)] bg-white shadow-[0_16px_44px_rgba(11,18,32,0.06)] transition hover:-translate-y-1 hover:border-[rgba(30,51,82,0.24)] hover:shadow-[0_26px_70px_rgba(11,18,32,0.12)]"
             >
-              <div className="border-b border-[var(--line)] bg-[linear-gradient(180deg,rgba(248,250,252,1)_0%,rgba(243,244,246,0.92)_100%)] px-7 py-6">
+              <div className="border-b border-[var(--line)] bg-[linear-gradient(180deg,rgba(248,250,252,1)_0%,rgba(243,244,246,0.92)_100%)] px-6 py-6 sm:px-7">
                 <div className="inline-flex rounded-full border border-[rgba(30,51,82,0.12)] bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent-2)]">
                   Beispiel-Szenario
                 </div>
@@ -87,7 +87,7 @@ export default function UseCaseProofSection({
                 </h3>
               </div>
 
-              <div className="space-y-5 p-7">
+              <div className="space-y-5 p-6 sm:p-7">
                 <div>
                   <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent-2)]">
                     Vorher
@@ -114,7 +114,7 @@ export default function UseCaseProofSection({
         </div>
 
         <div className="mt-16 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="rounded-[2rem] border border-[var(--line)] bg-white p-8 shadow-[0_16px_44px_rgba(11,18,32,0.05)]">
+          <div className="rounded-[2rem] border border-[var(--line)] bg-white p-6 shadow-[0_16px_44px_rgba(11,18,32,0.05)] sm:p-8">
             <div className="text-sm font-semibold uppercase tracking-[0.24em] text-[var(--accent-2)]">
               Einordnung
             </div>
@@ -128,7 +128,7 @@ export default function UseCaseProofSection({
             </p>
           </div>
 
-          <div className="rounded-[2rem] border border-[rgba(30,51,82,0.18)] bg-[linear-gradient(135deg,rgba(11,18,32,0.98)_0%,rgba(30,51,82,0.95)_100%)] p-8 text-white shadow-[0_24px_80px_rgba(11,18,32,0.2)]">
+          <div className="rounded-[2rem] border border-[rgba(30,51,82,0.18)] bg-[linear-gradient(135deg,rgba(11,18,32,0.98)_0%,rgba(30,51,82,0.95)_100%)] p-6 text-white shadow-[0_24px_80px_rgba(11,18,32,0.2)] sm:p-8">
             <div className="text-sm font-semibold uppercase tracking-[0.24em] text-white/48">
               Prüffelder
             </div>
@@ -136,7 +136,7 @@ export default function UseCaseProofSection({
               {proofSignals.map((item) => (
                 <div
                   key={item}
-                  className="flex items-center gap-3 rounded-full border border-white/10 bg-white/6 px-4 py-3 text-sm text-white/84"
+                  className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/6 px-4 py-3 text-sm leading-6 text-white/84 sm:items-center sm:rounded-full"
                 >
                   <span className="h-2.5 w-2.5 rounded-full bg-white" />
                   <span>{item}</span>

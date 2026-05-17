@@ -164,7 +164,7 @@ const processPreviewSteps = [
 export default function HomePage() {
   return (
     <main className="overflow-hidden">
-      <section className="relative isolate px-6 pb-16 pt-12 md:px-10 md:pb-20 md:pt-16">
+      <section className="relative isolate px-6 pb-14 pt-8 md:px-10 md:pb-20 md:pt-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_18%,rgba(30,51,82,0.26),transparent_30%),radial-gradient(circle_at_82%_18%,rgba(245,166,91,0.12),transparent_20%),linear-gradient(180deg,#f8fafc_0%,#eef3f9_48%,#ffffff_100%)]" />
         <div className="pointer-events-none absolute inset-0 opacity-35 [background-image:linear-gradient(rgba(16,24,40,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(16,24,40,0.05)_1px,transparent_1px)] [background-size:72px_72px] [mask-image:linear-gradient(180deg,rgba(0,0,0,0.55),transparent_78%)]" />
         <div className="pointer-events-none absolute inset-y-0 right-[-18%] flex items-center justify-center md:right-[-8%]">
@@ -176,13 +176,13 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.18fr_0.82fr] lg:items-center">
+        <div className="relative mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.18fr_0.82fr] lg:items-center">
           <div className="max-w-3xl">
             <motion.div
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-white/86 px-4 py-2 text-sm font-medium text-[var(--ink-2)] shadow-sm"
+              className="inline-flex max-w-full items-center gap-2 rounded-2xl border border-[var(--line)] bg-white/86 px-4 py-2 text-sm font-medium leading-6 text-[var(--ink-2)] shadow-sm sm:rounded-full"
             >
               <span className="h-2 w-2 rounded-full bg-[var(--accent-1)]" />
               KI-Agenten für Unternehmen
@@ -192,7 +192,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.64, delay: 0.06, ease: "easeOut" }}
-              className="mt-6 max-w-4xl text-4xl font-semibold leading-[0.94] tracking-[-0.06em] text-[var(--ink-1)] sm:text-5xl lg:text-[5.25rem]"
+              className="mt-5 max-w-4xl text-[2.85rem] font-semibold leading-[0.92] tracking-[-0.065em] text-[var(--ink-1)] sm:mt-6 sm:text-5xl sm:leading-[0.94] lg:text-[5.25rem]"
             >
               KI-Agenten, die Kundenanfragen, Support und Prozesse entlasten.
             </motion.h1>
@@ -201,7 +201,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.64, delay: 0.14, ease: "easeOut" }}
-              className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)]"
+              className="mt-5 max-w-2xl text-base leading-7 text-[var(--muted)] sm:mt-6 sm:text-lg sm:leading-8"
             >
               Soulé Smart Business entwickelt KI-Agenten, die wiederkehrende Aufgaben
               automatisieren, Anfragen strukturieren und Teams messbar entlasten.
@@ -211,12 +211,12 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.64, delay: 0.18, ease: "easeOut" }}
-              className="mt-7 grid gap-3 text-sm text-[var(--ink-2)] sm:grid-cols-2"
+              className="mt-6 grid gap-3 text-sm text-[var(--ink-2)] sm:mt-7 sm:grid-cols-2"
             >
               {benefitList.map((item) => (
                 <div
                   key={item}
-                  className="flex items-center gap-3 rounded-full border border-[var(--line)] bg-white/84 px-4 py-3 shadow-sm"
+                  className="flex items-start gap-3 rounded-2xl border border-[var(--line)] bg-white/84 px-4 py-3 leading-6 shadow-sm sm:items-center sm:rounded-full"
                 >
                   <span className="h-2.5 w-2.5 rounded-full bg-[var(--accent-1)]" />
                   <span>{item}</span>
@@ -228,20 +228,20 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.64, delay: 0.22, ease: "easeOut" }}
-              className="mt-9 flex flex-col gap-3 sm:flex-row"
+              className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row"
             >
-              <OpenContactButton className="rounded-full bg-[var(--ink-1)] px-7 py-4 text-base font-semibold text-white shadow-[0_20px_45px_rgba(11,18,32,0.18)] transition hover:bg-[var(--accent-2)]">
+              <OpenContactButton className="inline-flex min-h-[56px] w-full items-center justify-center rounded-full bg-[var(--ink-1)] px-7 py-4 text-base font-semibold text-white shadow-[0_20px_45px_rgba(11,18,32,0.18)] transition hover:bg-[var(--accent-2)] sm:w-auto">
                 KI-Potenzial prüfen
               </OpenContactButton>
               <Link
                 href="/leistungen"
-                className="rounded-full border border-[var(--line-strong)] bg-white/72 px-7 py-4 text-center text-base font-semibold text-[var(--ink-1)] transition hover:border-[var(--accent-2)] hover:text-[var(--accent-2)]"
+                className="inline-flex min-h-[56px] w-full items-center justify-center rounded-full border border-[var(--line-strong)] bg-white/72 px-7 py-4 text-center text-base font-semibold text-[var(--ink-1)] transition hover:border-[var(--accent-2)] hover:text-[var(--accent-2)] sm:w-auto"
               >
                 Lösungen ansehen
               </Link>
             </motion.div>
 
-            <div className="mt-5 text-sm font-medium text-[var(--muted)]">
+            <div className="mt-5 text-sm font-medium leading-6 text-[var(--muted)]">
               Unverbindlich · praxisnah · klare Grenzen
             </div>
           </div>
@@ -250,10 +250,10 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.68, delay: 0.12, ease: "easeOut" }}
-            className="relative mx-auto w-full max-w-[32rem] lg:ml-auto"
+            className="relative mx-auto w-full max-w-[28rem] lg:ml-auto lg:max-w-[32rem]"
           >
             <div className="absolute -inset-4 rounded-[2rem] bg-[radial-gradient(circle_at_top,rgba(30,51,82,0.24),rgba(255,255,255,0.04))] blur-3xl" />
-            <div className="hero-panel-glow relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(165deg,rgba(11,18,32,0.92)_0%,rgba(18,32,52,0.9)_52%,rgba(11,18,32,0.96)_100%)] p-5 text-white shadow-[0_28px_80px_rgba(11,18,32,0.28)] backdrop-blur md:p-6">
+            <div className="hero-panel-glow relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-[linear-gradient(165deg,rgba(11,18,32,0.92)_0%,rgba(18,32,52,0.9)_52%,rgba(11,18,32,0.96)_100%)] p-4 text-white shadow-[0_28px_80px_rgba(11,18,32,0.28)] backdrop-blur sm:rounded-[2rem] sm:p-5 md:p-6">
               <div className="pointer-events-none absolute inset-0 opacity-14 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:30px_30px]" />
               <div className="relative">
                 <div className="flex items-start justify-between gap-4">
@@ -268,7 +268,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="mt-7 space-y-3">
+                <div className="mt-6 space-y-3 sm:mt-7">
                   {workflowCards.map((item, index) => (
                     <motion.div
                       key={item.title}
@@ -276,7 +276,7 @@ export default function HomePage() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.42, delay: 0.14 + index * 0.06, ease: "easeOut" }}
                       className={[
-                        "group relative overflow-hidden rounded-[1.35rem] border px-4 py-3.5 transition",
+                        "group relative overflow-hidden rounded-[1.2rem] border px-3.5 py-3 transition sm:rounded-[1.35rem] sm:px-4 sm:py-3.5",
                         index === 2
                           ? "float-gentle border-white/14 bg-white/[0.09] shadow-[0_14px_38px_rgba(31,79,134,0.14)]"
                           : "border-white/8 bg-white/[0.045] hover:border-white/14 hover:bg-white/[0.065]",
@@ -292,19 +292,19 @@ export default function HomePage() {
 
                         <div className="min-w-0 flex-1">
                           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                            <div className="text-sm font-semibold text-white/90 md:text-[15px]">{item.title}</div>
-                            <span className="rounded-full border border-white/8 bg-white/8 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/60">
+                            <div className="text-sm font-semibold leading-6 text-white/90 md:text-[15px]">{item.title}</div>
+                            <span className="self-start rounded-full border border-white/8 bg-white/8 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/60">
                               {item.status}
                             </span>
                           </div>
-                          <p className="mt-1.5 max-w-md text-sm leading-6 text-white/64">{item.text}</p>
+                          <p className="mt-1.5 max-w-md text-[13px] leading-6 text-white/64 sm:text-sm">{item.text}</p>
                         </div>
                       </div>
                     </motion.div>
                   ))}
                 </div>
 
-                <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                <div className="mt-5 grid gap-3 sm:mt-6 sm:grid-cols-2">
                   {[
                     {
                       label: "Nutzen",
@@ -317,7 +317,7 @@ export default function HomePage() {
                   ].map((item) => (
                     <div
                       key={item.label}
-                      className="rounded-[1.35rem] border border-white/8 bg-white/[0.05] px-4 py-4 backdrop-blur"
+                      className="rounded-[1.2rem] border border-white/8 bg-white/[0.05] px-4 py-4 backdrop-blur sm:rounded-[1.35rem]"
                     >
                       <div className="text-xs uppercase tracking-[0.22em] text-white/45">{item.label}</div>
                       <div className="mt-2 text-sm leading-6 text-white/74">{item.text}</div>
@@ -502,7 +502,7 @@ export default function HomePage() {
       </Section>
 
       <section className="px-6 pb-8 pt-6 md:px-10 md:pb-12">
-        <div className="mx-auto max-w-6xl rounded-[2.3rem] bg-[linear-gradient(135deg,#0B1220_0%,#1E3352_100%)] px-8 py-12 text-white shadow-[0_28px_90px_rgba(11,18,32,0.28)] md:px-12">
+        <div className="mx-auto max-w-6xl rounded-[2rem] bg-[linear-gradient(135deg,#0B1220_0%,#1E3352_100%)] px-6 py-10 text-white shadow-[0_28px_90px_rgba(11,18,32,0.28)] sm:px-8 md:rounded-[2.3rem] md:px-12 md:py-12">
           <div className="grid gap-8 md:grid-cols-[1.08fr_0.92fr] md:items-end">
             <div>
               <div className="text-sm font-semibold uppercase tracking-[0.28em] text-white/50">
@@ -518,12 +518,12 @@ export default function HomePage() {
             </div>
 
             <div className="flex flex-col gap-3 md:items-end">
-              <OpenContactButton className="rounded-full bg-white px-6 py-4 text-sm font-semibold text-[var(--ink-1)] transition hover:bg-[var(--surface-1)]">
+              <OpenContactButton className="w-full rounded-full bg-white px-6 py-4 text-sm font-semibold text-[var(--ink-1)] transition hover:bg-[var(--surface-1)] md:w-auto">
                 Kostenlose Analyse anfragen
               </OpenContactButton>
               <Link
                 href="/leistungen"
-                className="rounded-full border border-white/20 px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-white/10"
+                className="w-full rounded-full border border-white/20 px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-white/10 md:w-auto"
               >
                 Lösungen ansehen
               </Link>

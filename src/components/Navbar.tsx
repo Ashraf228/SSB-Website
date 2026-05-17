@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 px-4 pt-4 md:px-6">
+      <header className="sticky top-0 z-50 px-3 pt-3 sm:px-4 sm:pt-4 md:px-6">
         <div
           className={[
             "mx-auto flex max-w-7xl items-center justify-between rounded-full border px-4 py-3 transition md:px-6",
@@ -41,13 +41,15 @@ export default function Navbar() {
               alt="Soulé Smart Business"
               width={56}
               height={56}
-              className="h-12 w-12 object-contain"
+              className="h-11 w-11 object-contain sm:h-12 sm:w-12"
             />
             <div>
-              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--ink-2)]">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-2)] sm:text-sm sm:tracking-[0.2em]">
                 Soulé Smart Business
               </div>
-              <div className="text-xs text-[var(--muted)]">KI-Agenten und Automatisierung</div>
+              <div className="hidden text-xs text-[var(--muted)] sm:block">
+                KI-Agenten und Automatisierung
+              </div>
             </div>
           </Link>
 

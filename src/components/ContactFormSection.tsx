@@ -74,7 +74,7 @@ export default function ContactFormSection() {
   return (
     <form
       onSubmit={submit}
-      className="rounded-[2rem] border border-[var(--line)] bg-white p-7 shadow-[0_18px_48px_rgba(11,18,32,0.06)] md:p-8"
+      className="rounded-[2rem] border border-[var(--line)] bg-white p-6 shadow-[0_18px_48px_rgba(11,18,32,0.06)] md:p-8"
     >
       <div className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent-2)]">
         Analyseanfrage
@@ -194,7 +194,7 @@ export default function ContactFormSection() {
       <button
         type="submit"
         disabled={loading}
-        className="mt-6 inline-flex min-h-[56px] items-center justify-center rounded-full bg-[var(--ink-1)] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[var(--accent-2)] disabled:opacity-60"
+        className="mt-6 inline-flex min-h-[56px] w-full items-center justify-center rounded-full bg-[var(--ink-1)] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[var(--accent-2)] disabled:opacity-60 sm:w-auto"
       >
         {loading ? "Wird gesendet..." : "Kostenlose Analyse anfragen"}
       </button>

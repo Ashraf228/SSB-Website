@@ -95,9 +95,9 @@ export default function ContactModal({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.98 }}
             transition={{ duration: 0.2 }}
-            className="relative max-h-[90vh] w-full max-w-2xl overflow-hidden rounded-[2rem] bg-white text-[#0B1220] shadow-2xl"
+            className="relative max-h-[calc(100vh-1.5rem)] w-full max-w-2xl overflow-hidden rounded-[1.75rem] bg-white text-[#0B1220] shadow-2xl sm:max-h-[90vh] sm:rounded-[2rem]"
           >
-            <div className="flex items-start justify-between gap-6 border-b border-black/10 p-7 md:p-8">
+            <div className="flex items-start justify-between gap-4 border-b border-black/10 p-5 sm:gap-6 sm:p-7 md:p-8">
               <div>
                 <div className="text-sm font-semibold uppercase tracking-[0.22em] text-[#1E3352]">
                   Analyseanfrage
@@ -119,7 +119,7 @@ export default function ContactModal({
               </button>
             </div>
 
-            <form onSubmit={submit} className="max-h-[calc(90vh-140px)] space-y-4 overflow-y-auto p-7 md:p-8">
+            <form onSubmit={submit} className="max-h-[calc(100vh-10rem)] space-y-4 overflow-y-auto p-5 sm:max-h-[calc(90vh-140px)] sm:p-7 md:p-8">
               <input
                 value={form.hp}
                 onChange={(e) => setForm({ ...form, hp: e.target.value })}

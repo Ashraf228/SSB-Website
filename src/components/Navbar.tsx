@@ -35,13 +35,14 @@ export default function Navbar() {
               : "border-transparent bg-white/55 backdrop-blur",
           ].join(" ")}
         >
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3 sm:gap-4">
             <Image
               src="/logo-mark.png"
               alt="Soulé Smart Business"
-              width={56}
-              height={56}
-              className="h-11 w-11 object-contain sm:h-12 sm:w-12"
+              width={96}
+              height={96}
+              className="h-12 w-12 object-contain sm:h-14 sm:w-14"
+              priority
             />
             <div>
               <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-2)] sm:text-sm sm:tracking-[0.2em]">

@@ -35,17 +35,20 @@ export default function Navbar() {
               : "border-transparent bg-white/55 backdrop-blur",
           ].join(" ")}
         >
-          <Link href="/" className="flex items-center gap-3 sm:gap-4">
-            <Image
-              src="/logo-mark.png"
-              alt="Soulé Smart Business"
-              width={96}
-              height={96}
-              className="h-12 w-12 object-contain sm:h-14 sm:w-14"
-              priority
-            />
-            <div>
-              <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-2)] sm:text-sm sm:tracking-[0.2em]">
+          <Link href="/" className="flex min-w-0 items-center gap-3 sm:gap-4">
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/90 bg-white shadow-[0_10px_28px_rgba(11,18,32,0.12)] ring-1 ring-[rgba(16,24,40,0.06)] sm:h-16 sm:w-16">
+              <Image
+                src="/logo-mark.png"
+                alt="Soulé Smart Business"
+                width={128}
+                height={128}
+                sizes="(max-width: 640px) 40px, 48px"
+                className="h-10 w-10 object-contain sm:h-12 sm:w-12"
+                priority
+              />
+            </span>
+            <div className="min-w-0">
+              <div className="truncate text-[11px] font-semibold uppercase tracking-[0.15em] text-[var(--ink-2)] sm:text-sm sm:tracking-[0.2em]">
                 Soulé Smart Business
               </div>
               <div className="hidden text-xs text-[var(--muted)] sm:block">

@@ -104,8 +104,27 @@ const faqGroups = [
 ];
 
 export default function FAQPage() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqGroups.flatMap((group) =>
+      group.items.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.a,
+        },
+      })),
+    ),
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <PageHero
         eyebrow="FAQ"
         title="Häufige Fragen rund um KI-Agenten für Unternehmen"

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import HomePage from "@/components/HomePage";
-import { buildPageMetadata } from "@/lib/seo";
+import { BASE_URL, SITE_NAME, buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "KI-Agenten für Unternehmen",
@@ -13,8 +13,8 @@ export default function Page() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "Soulé Smart Business",
-    url: "https://soulesmartbusiness.com",
+    name: SITE_NAME,
+    url: BASE_URL,
     telephone: "+4915511410215",
     email: "hello@soulesmartbusiness.com",
     address: {
@@ -36,6 +36,8 @@ export default function Page() {
       "KI-Prozessautomatisierung",
       "KI im E-Commerce",
       "Digitale Prozessentlastung",
+      "KI-Agenten für Unternehmen in Limburg",
+      "KI-Agenten für Unternehmen in Frankfurt",
     ],
     sameAs: [],
   };

@@ -48,32 +48,32 @@ export default function DatenschutzPage() {
           </div>
 
           <div>
-  <h2 className="text-xl font-semibold text-white">3. Hosting (Vercel)</h2>
+            <h2 className="text-xl font-semibold text-white">3. Hosting (Vercel)</h2>
 
-  <p className="mt-3">
-    Diese Website wird über die Plattform <strong>Vercel</strong> gehostet. Anbieter ist
-    die Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA.
-  </p>
+            <p className="mt-3">
+              Diese Website wird über die Plattform <strong>Vercel</strong> gehostet. Anbieter ist
+              die Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA.
+            </p>
 
-  <p className="mt-3">
-    Beim Aufruf der Website werden durch Vercel bzw. die technische Infrastruktur
-    automatisch Daten verarbeitet, die für den Betrieb und die Auslieferung der Website
-    erforderlich sind (z. B. IP-Adresse, Datum/Uhrzeit, aufgerufene Seite, Referrer-URL,
-    Browser-/Geräteinformationen sowie Server-Logfiles).
-  </p>
+            <p className="mt-3">
+              Beim Aufruf der Website werden durch Vercel bzw. die technische Infrastruktur
+              automatisch Daten verarbeitet, die für den Betrieb und die Auslieferung der Website
+              erforderlich sind (z. B. IP-Adresse, Datum/Uhrzeit, aufgerufene Seite, Referrer-URL,
+              Browser-/Geräteinformationen sowie Server-Logfiles).
+            </p>
 
-  <p className="mt-3">
-    Die Verarbeitung erfolgt zur Bereitstellung, Sicherheit und Stabilität der Website
-    (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse an einer
-    zuverlässigen und sicheren Darstellung unseres Online-Angebots).
-  </p>
+            <p className="mt-3">
+              Die Verarbeitung erfolgt zur Bereitstellung, Sicherheit und Stabilität der Website
+              (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an einer
+              zuverlässigen und sicheren Darstellung unseres Online-Angebots).
+            </p>
 
-  <p className="mt-3">
-    Es kann dabei zu einer Verarbeitung von Daten in den USA kommen. Für die Übermittlung
-    werden geeignete Garantien genutzt, insbesondere Standardvertragsklauseln (SCC) im
-    Rahmen eines Auftragsverarbeitungsvertrags (Art. 28 DSGVO / Art. 46 DSGVO).
-  </p>
-</div>
+            <p className="mt-3">
+              Es kann dabei zu einer Verarbeitung von Daten in den USA kommen. Für die Übermittlung
+              werden geeignete Garantien genutzt, insbesondere Standardvertragsklauseln (SCC) im
+              Rahmen eines Auftragsverarbeitungsvertrags (Art. 28 DSGVO / Art. 46 DSGVO).
+            </p>
+          </div>
 
           <div>
             <h2 className="text-xl font-semibold text-white">4. Kontaktaufnahme</h2>
@@ -93,16 +93,64 @@ export default function DatenschutzPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold text-white">5. Cookies / Tracking</h2>
+            <h2 className="text-xl font-semibold text-white">
+              5. KI-Chatfenster / Beratungsassistent
+            </h2>
             <p className="mt-3">
-              Diese Website verwendet derzeit keine Tracking- oder Marketing-Cookies. Falls zukünftig
-              Analyse- oder Marketing-Tools eingesetzt werden, wird dies hier entsprechend ergänzt
-              (inkl. Einwilligung, sofern erforderlich).
+              Auf dieser Website ist ein KI-Chatfenster von Soulé Smart Business eingebunden. Das
+              Chatfenster wird über die Domain <strong>widget.soulesmartbusiness.com</strong> geladen
+              und dient dazu, Fragen zu unseren Leistungen zu beantworten, erste Einschätzungen zu
+              KI-Agenten und Automatisierung zu geben sowie Kontakt- oder Beratungsanfragen
+              vorzubereiten.
+            </p>
+            <p className="mt-3">
+              Wenn Sie das Chatfenster nutzen, können insbesondere folgende Daten verarbeitet werden:
+              Ihre eingegebenen Nachrichten, technische Sitzungsdaten, Zeitpunkt der Nutzung,
+              aufgerufene Seite, Browser-/Geräteinformationen sowie Kontaktdaten, sofern Sie diese im
+              Chat freiwillig angeben (z. B. Name, Unternehmen, E-Mail-Adresse oder Telefonnummer).
+            </p>
+            <p className="mt-3">
+              Die Verarbeitung erfolgt zur Bereitstellung des Chatfensters, zur Beantwortung Ihrer
+              Fragen, zur Vorbereitung einer Beratung sowie zur technischen Sicherheit und
+              Verbesserung des Dienstes. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO
+              (berechtigtes Interesse an einer effizienten Kommunikation und Bereitstellung eines
+              digitalen Beratungsangebots). Wenn Sie über den Chat eine konkrete Anfrage stellen oder
+              eine Beratung wünschen, kann zusätzlich Art. 6 Abs. 1 lit. b DSGVO
+              (vorvertragliche Maßnahmen) einschlägig sein.
+            </p>
+            <p className="mt-3">
+              Bitte geben Sie im Chat keine besonderen Kategorien personenbezogener Daten im Sinne
+              von Art. 9 DSGVO, keine Passwörter, Zugangsdaten, Zahlungsdaten, API-Schlüssel,
+              vertraulichen Unternehmensgeheimnisse oder sonstige sensiblen Informationen ein.
+            </p>
+            <p className="mt-3">
+              Chatverläufe und daraus entstehende Anfragen werden nur so lange gespeichert, wie dies
+              für die Bearbeitung, technische Bereitstellung, Nachvollziehbarkeit oder gesetzliche
+              Aufbewahrungspflichten erforderlich ist. Soweit Daten für eine konkrete Anfrage nicht
+              mehr erforderlich sind, werden sie gelöscht oder anonymisiert.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold text-white">6. Ihre Rechte</h2>
+            <h2 className="text-xl font-semibold text-white">
+              6. Cookies, lokale Speicherung und Tracking
+            </h2>
+            <p className="mt-3">
+              Diese Website verwendet derzeit keine Marketing-Cookies und keine externen
+              Werbetracking-Tools. Für den Betrieb des KI-Chatfensters können jedoch technisch
+              notwendige Informationen im Browser gespeichert oder ausgelesen werden, z. B. um eine
+              Chat-Sitzung zu ermöglichen, den Chatstatus zu halten oder die technische Bereitstellung
+              sicherzustellen.
+            </p>
+            <p className="mt-3">
+              Falls zukünftig Analyse- oder Marketing-Tools eingesetzt werden, wird diese
+              Datenschutzerklärung entsprechend ergänzt und, soweit erforderlich, eine Einwilligung
+              eingeholt.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-semibold text-white">7. Ihre Rechte</h2>
             <p className="mt-3">
               Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
               Datenübertragbarkeit sowie Widerspruch gegen die Verarbeitung Ihrer Daten. Zudem haben Sie

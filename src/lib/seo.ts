@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
-const SITE_NAME = "Soulé Smart Business";
-const BASE_URL = "https://soulesmartbusiness.com";
+export const BASE_URL = "https://www.soulesmartbusiness.com";
+export const SITE_NAME = "Soulé Smart Business";
 
 type BuildPageMetadataInput = {
   title: string;

@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SiteShell from "@/components/SiteShell";
+import { BASE_URL, SITE_NAME } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://soulesmartbusiness.com"),
+  metadataBase: new URL(BASE_URL),
   title: {
-    default: "KI-Agenten für Unternehmen | Soulé Smart Business",
-    template: "%s | Soulé Smart Business",
+    default: `KI-Agenten für Unternehmen | ${SITE_NAME}`,
+    template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Soulé Smart Business entwickelt KI-Agenten für Unternehmen und KI-Automatisierung: Support entlasten, Kundenanfragen automatisieren und Prozesse effizienter machen.",
-  applicationName: "Soulé Smart Business",
-  alternates: { canonical: "https://soulesmartbusiness.com" },
+    "Soulé Smart Business entwickelt KI-Agenten für Unternehmen in Limburg, Frankfurt und deutschlandweit: Support entlasten, Kundenanfragen automatisieren und Prozesse effizienter machen.",
+  applicationName: SITE_NAME,
+  alternates: { canonical: BASE_URL },
   icons: {
     icon: "/icon.png",
     shortcut: "/favicon.ico",
@@ -19,17 +20,17 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://soulesmartbusiness.com",
-    siteName: "Soulé Smart Business",
-    title: "KI-Agenten für Unternehmen | Soulé Smart Business",
+    url: BASE_URL,
+    siteName: SITE_NAME,
+    title: `KI-Agenten für Unternehmen | ${SITE_NAME}`,
     description:
       "KI-Agenten für Unternehmen, KI-Automatisierung, Support-Entlastung und strukturierte Kundenanfragen.",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Soulé Smart Business" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: SITE_NAME }],
     locale: "de_DE",
   },
   twitter: {
     card: "summary_large_image",
-    title: "KI-Agenten für Unternehmen | Soulé Smart Business",
+    title: `KI-Agenten für Unternehmen | ${SITE_NAME}`,
     description:
       "KI-Agenten für Unternehmen, KI-Automatisierung und entlastete Prozesse für Support, Leads und Anfragen.",
     images: ["/og.png"],

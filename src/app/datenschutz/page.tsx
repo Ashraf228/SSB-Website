@@ -98,10 +98,9 @@ export default function DatenschutzPage() {
             </h2>
             <p className="mt-3">
               Auf dieser Website ist ein KI-Chatfenster von Soulé Smart Business eingebunden. Das
-              Chatfenster wird über die Domain <strong>widget.soulesmartbusiness.com</strong> geladen
-              und dient dazu, Fragen zu unseren Leistungen zu beantworten, erste Einschätzungen zu
-              KI-Agenten und Automatisierung zu geben sowie Kontakt- oder Beratungsanfragen
-              vorzubereiten.
+              Chatfenster dient dazu, Fragen zu unseren Leistungen zu beantworten, erste
+              Einschätzungen zu KI-Agenten und Automatisierung zu geben sowie Kontakt- oder
+              Beratungsanfragen vorzubereiten.
             </p>
             <p className="mt-3">
               Wenn Sie das Chatfenster nutzen, können insbesondere folgende Daten verarbeitet werden:
